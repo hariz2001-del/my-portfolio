@@ -2,40 +2,70 @@ import { Link } from "react-router-dom";
 
 const groups = [
   {
-    title: "Business & F&B operations",
-    basis: "Co-owner experience · Sarang",
-    intro: "I work with the real constraints of a kiosk, not only a product brief.",
-    items: ["Customer service and issue handling", "Bites products, purchasing and restocking", "Sales and cost decisions", "Part-time staff training and SOPs", "TikTok Live customer engagement", "Partner expense allocation and accountability"],
+    title: "Business ownership & operations",
+    basis: "Direct work · Sarang co-owner",
+    intro: "Day-to-day decisions in a live F&B business give me practical commercial and customer context.",
+    items: ["Bites products and menu decisions", "Purchasing, stock checks and restocking", "Supplier and replenishment follow-up", "Sales and cost visibility", "Direct versus shared expense classification", "Partner expense allocation and reimbursement rules", "Customer service and issue resolution", "Training five part-time staff on SOPs", "Shift routines and operational accountability", "TikTok Live promotion and customer engagement"],
   },
   {
-    title: "Systems, product & analysis",
+    title: "Stakeholder & delivery coordination",
+    basis: "Engineering, business and client projects",
+    intro: "I work across technical and non-technical viewpoints to keep decisions, revisions and handoffs clear.",
+    items: ["Client and stakeholder communication", "Site and fabrication follow-up", "Coordination with architects and authorities", "Technical comments and design-query tracking", "Authority-submission support", "Requirements clarification", "Written follow-up and documentation", "Multidisciplinary handoffs", "Customer-facing communication", "Operational SOP training"],
+  },
+  {
+    title: "Systems & product analysis",
     basis: "Direct project contribution",
-    intro: "I turn ambiguous requests into simpler workflows and testable rules.",
-    items: ["Stakeholder conversations", "Requirements and process mapping", "Owner and cashier user journeys", "Business rules and edge cases", "Acceptance criteria and scenario testing", "Content architecture and source validation", "Prioritisation and scope trade-offs", "Operational documentation"],
+    intro: "I translate ambiguous operating needs into narrower, testable systems rather than feature lists.",
+    items: ["Requirements and workflow mapping", "Owner, cashier, learner and lecturer journeys", "Roles, permissions and business rules", "Order, payment and correction edge cases", "Acceptance criteria and scenario testing", "Process simplification and scope trade-offs", "Operational and content documentation", "Source-content validation", "Information architecture", "Stakeholder feedback into iteration"],
   },
   {
-    title: "Web, software & data",
-    basis: "Technologies used in AI-assisted projects",
-    intro: "I direct, review and troubleshoot these builds; a listed framework does not imply independent expert-level coding.",
-    items: ["HTML, CSS, JavaScript and TypeScript", "React, Next.js, Vite and Tailwind CSS", "Node.js, Express, Fastify and REST APIs", "PostgreSQL, MySQL, MongoDB and Supabase", "Prisma and data modelling", "Vitest, Playwright and build checks", "DeepSeek API integration", "Responsive sites and progressive web apps"],
+    title: "Civil & structural engineering",
+    basis: "Professional engineering roles",
+    intro: "Analysis, drawings, site checks and approvals work that also informs my technical judgment in digital projects.",
+    items: ["Telecommunications monopoles and high masts", "Structural modelling and load-path checks", "Reinforced-concrete, steel and foundation design support", "Pile-capacity analysis", "Water-reticulation and sewerage documentation", "GA and fabrication drawings", "Site inspections and as-built checks", "Constructability and design revisions", "STAAD.Pro, MS Tower and OpenTower", "AutoCAD, ProtaStructure and AllPile", "FEM versus LEM slope-stability research"],
   },
   {
-    title: "Cloud & DevOps",
-    basis: "Hands-on coursework and test deployments",
-    intro: "Practical learning across the route from code to a reachable application.",
-    items: ["Git, GitHub, branches and pull requests", "Dockerfiles and Docker Compose", "Container ports, volumes and environment files", "Ubuntu administration, SSH and key pairs", "AWS EC2, Security Groups and Elastic IP", "Nginx reverse proxy and virtual hosts", "Cloudflare DNS, Pages and HTTPS certificates", "GitHub Actions CI/CD and Docker Hub workflows", "Systemd services and deployment troubleshooting", "Linux process, memory, disk and port diagnostics"],
+    title: "Web interfaces & CMS",
+    basis: "AI-assisted projects and content planning",
+    intro: "I shape and review the customer-facing experience, while being clear about AI assistance in implementation.",
+    items: ["HTML, CSS, JavaScript and TypeScript", "React, Next.js and Vite", "Tailwind CSS and responsive UI", "Progressive web app patterns", "Catalogue, checkout and dashboard flows", "Content architecture and source audits", "Static-site deployment and custom domains", "WordPress CMS migration planning for PMNI", "SEO basics, metadata and sitemaps", "Flutter/Dart prototype exposure"],
   },
   {
-    title: "Engineering & transferable practice",
-    basis: "Professional civil-engineering experience",
-    intro: "Formal analysis, documentation and coordination shaped how I approach digital work.",
-    items: ["Structural analysis and design", "STAAD.Pro, OpenTower and AutoCAD", "RC, steel and foundation design support", "Technical drawings and documentation", "Client and site-stakeholder coordination", "Authority-submission support", "Constraint analysis and issue follow-up", "Clear technical handoffs"],
+    title: "Applications, APIs & AI integrations",
+    basis: "Technologies used in AI-assisted builds",
+    intro: "These stacks appear in project code I have directed, reviewed and tested; they are not all claims of solo implementation.",
+    items: ["Node.js, Express and Fastify", "REST and JSON APIs", "Authentication and role-aware workflows", "API-key header patterns", "Zod validation, JWT and bcrypt in projects", "DeepSeek API-backed question flows", "Gemini-assisted content/OCR workflows", "Python and PyMuPDF content processing", "Vite and Next.js build checks", "Environment-based configuration"],
   },
   {
-    title: "CMS & architecture exposure",
-    basis: "Planning and course concepts",
-    intro: "Useful context, distinguished from completed production ownership.",
-    items: ["WordPress CMS migration planning for PMNI", "AWS load balancer, RDS and ACM concepts", "Terraform and infrastructure-as-code concepts", "Kubernetes in the course pathway; no production deployment claimed"],
+    title: "Data & operational systems",
+    basis: "AI-assisted products plus guided database labs",
+    intro: "My focus is on data meaning, traceability and business rules; the tools span both project and course work.",
+    items: ["PostgreSQL, MySQL and MongoDB", "Supabase and Prisma", "Data modelling, migrations and seeding", "Row-Level Security patterns in project work", "Inventory, costing and expense workflows", "Sale/shift state and reconciliation rules", "Immutable paid-sale correction concepts", "Persistent Docker database volumes", "DBeaver and MongoDB Compass", "SQL and connection troubleshooting"],
+  },
+  {
+    title: "Cloud, Linux & networking",
+    basis: "Hands-on course labs and test deployments",
+    intro: "I have worked through the practical route from a local service to a reachable host and domain.",
+    items: ["AWS EC2 and Ubuntu administration", "Security Groups and Elastic IP", "SSH/Ed25519 keys and scp", "apt, ownership and file permissions", "Nginx virtual hosts and reverse proxy", "Cloudflare DNS, nameservers and TTL", "Cloudflare Pages and custom domains", "Certbot and HTTPS setup", "systemd service management", "Port, process, memory and disk diagnostics"],
+  },
+  {
+    title: "Containers, Git & CI/CD",
+    basis: "Guided deployment work and workflow practice",
+    intro: "I distinguish the lab work I performed from more advanced delivery patterns covered in the course.",
+    items: ["Docker Engine, Dockerfiles and Node Alpine images", "Docker Compose services and named volumes", "Port mapping and host/container networking", "Container lifecycle, logs and image tags", "Git/GitHub branches, commits and pull requests", "Repository hygiene and .gitignore", "GitHub Actions build/test gates", "Artifacts, Secrets and Variables", "Docker Hub and SSH-to-EC2 deployment patterns", "Cloudflare Pages preview/production flow"],
+  },
+  {
+    title: "Quality, troubleshooting & communication",
+    basis: "Project delivery and professional practice",
+    intro: "I follow a result through to whether it works for users, not only whether it builds.",
+    items: ["User-scenario and edge-case testing", "Vitest, Playwright and build checks", "Source and navigation-link auditing", "API and environment troubleshooting", "Browser and runtime verification", "Data consistency and reconciliation checks", "Technical documentation and handover", "Analytical problem decomposition", "Review comments and revision tracking", "English and Bahasa Malaysia communication"],
+  },
+  {
+    title: "Architecture & course concepts",
+    basis: "Course exposure, not production ownership",
+    intro: "These topics belong in the picture, with their experience level stated rather than inflated.",
+    items: ["Frontend/API/database separation", "AWS load balancers and target groups", "Private RDS and SSH tunnelling concepts", "ACM and Secrets Manager concepts", "Terraform infrastructure-as-code workflow", "Kubernetes pods, deployments and services", "Branch protection and review gates", "Backup and recovery planning concepts"],
   },
 ];
 
@@ -45,14 +75,19 @@ function Skills() {
       <section className="page-hero wrap">
         <p className="eyebrow">SKILLS / CONTEXT MATTERS</p>
         <h1>Broad skills.<br /><em>Clear evidence.</em></h1>
-        <p>My work spans business operations, engineering, product analysis, web delivery and cloud practice. Each group below says how I gained that experience.</p>
+        <p>My work spans business ownership, civil engineering, stakeholder delivery, product analysis, web and data projects, and hands-on cloud practice. Each group says how I gained that experience.</p>
       </section>
+      <div className="wrap skills-context-strip" aria-label="How to read this skills inventory">
+        <span>DIRECT WORK <small>business, engineering and product decisions</small></span>
+        <span>AI-ASSISTED PROJECTS <small>stacks I direct, review and test</small></span>
+        <span>COURSE PRACTICE <small>labs, deployments and architecture concepts</small></span>
+      </div>
       <section className="section wrap" aria-label="Skills inventory">
         <div className="skills-directory">
           {groups.map((group, index) => (
             <article className="skills-directory-card" key={group.title}>
               <div className="skills-directory-heading">
-                <span className="eyebrow">0{index + 1} / {group.basis}</span>
+                <span className="eyebrow">{String(index + 1).padStart(2, "0")} / {group.basis}</span>
                 <h2>{group.title}</h2>
                 <p>{group.intro}</p>
               </div>

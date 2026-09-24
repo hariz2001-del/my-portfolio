@@ -120,13 +120,14 @@ export const projects = [
     problem: "I wanted to understand how a frontend, API and database become a reachable application, beyond simply deploying a build.",
     contribution:
       "Containerised an Express API, configured Compose services for MySQL, PostgreSQL and MongoDB, and practised an Ubuntu EC2 deployment with SSH, Nginx, HTTPS and Cloudflare DNS. This was a learning deployment, not a production service.",
-    stack: ["Docker", "Docker Compose", "AWS EC2", "Ubuntu", "Nginx"],
+    stack: ["Docker", "Docker Compose", "AWS EC2", "Ubuntu", "SSH", "Nginx", "Cloudflare", "GitHub Actions"],
     link: "https://github.com/hariz2001-del/devops-cloud-portfolio",
     linkLabel: "View repository",
     details: [
       "Containerised an Express API with a Node 20 Alpine Dockerfile.",
       "Configured MySQL, PostgreSQL and MongoDB Compose services with env values, port mapping and volumes.",
       "Practised an Ubuntu EC2 test deployment using SSH, Security Groups, Elastic IP, Nginx, HTTPS and Cloudflare DNS.",
+      "Managed a Node service with systemd and used logs, process, port and resource checks to investigate deployment behaviour.",
       "Covered Git branching, pull requests, GitHub Actions CI/CD, Docker Hub delivery and secrets/environment handling.",
     ],
     aiNote: "Guided course practice and test deployment, not an independently operated production service.",
@@ -145,8 +146,9 @@ export const projects = [
     hideLink: true,
     details: [
       "Built and deployed the business website with AI-assisted HTML/CSS and a custom domain.",
-      "Co-own and run kiosk operations, including bites products, restocking, customer-facing work and staff SOPs.",
-      "Use those operating observations to validate Vista’s POS and management requirements.",
+      "Co-own and run kiosk operations, including products, purchasing, restocking, customer-facing work and staff SOPs.",
+      "Train five part-time staff, support customer engagement and work through sales, costs and partner accountability.",
+      "Use real orders, payment states and expense rules to validate Vista’s POS and owner-management requirements.",
     ],
     aiNote: "AI-assisted HTML/CSS website build; the business operations and product decisions are my direct work.",
   },
@@ -178,11 +180,12 @@ export const projects = [
     theme: "engineering",
     lead: "Structural analysis, drawings and coordination across telecommunications and building-design work.",
     problem: "Design work had to satisfy technical constraints while remaining clear enough for review, approvals and implementation.",
-    contribution: "At Oversea Deco I analysed telco structures and prepared technical drawings; at Perunding ZAB I supported RC, steel and foundation design, authority submissions and stakeholder follow-up.",
-    stack: ["STAAD.Pro", "OpenTower", "AutoCAD", "Structural analysis", "Technical drawings"],
+    contribution: "At Oversea Deco I analysed telco structures, prepared GA/fabrication drawings and supported site checks; at Perunding ZAB I supported RC, steel, foundation and infrastructure design, authority submissions and stakeholder follow-up.",
+    stack: ["STAAD.Pro", "MS Tower", "OpenTower", "AutoCAD", "ProtaStructure", "AllPile"],
     details: [
-      "Analysed telecommunications poles and high-mast structures, working through design comments and site constraints.",
-      "Supported reinforced-concrete, steel and foundation design, calculations and drawings.",
+      "Analysed telecommunications monopoles and high masts, working through design comments, fabrication needs and site constraints.",
+      "Prepared GA/fabrication drawings and supported site inspections and as-built checks.",
+      "Supported reinforced-concrete, steel and foundation design, pile-capacity work, water reticulation and sewerage documentation.",
       "Assisted authority submissions and coordinated technical queries with clients, architects, authorities and site stakeholders.",
       "Documented revisions and clarified technical handoffs across disciplines.",
     ],
@@ -194,8 +197,8 @@ export const projects = [
 export const skillGroups = [
   {
     label: "Business & operations",
-    text: "Co-owner experience running an F&B kiosk: customer service, staff routines, replenishment, sales and practical cost decisions.",
-    tags: ["F&B operations", "Staff SOPs", "Restocking", "Customer service", "Sales & costs"],
+    text: "Co-owner decisions across products, people, customers, purchasing, costs and partner accountability at Sarang.",
+    tags: ["Business ownership", "Staff SOPs", "Purchasing", "Customer service", "Sales & costs"],
   },
   {
     label: "Structural engineering",
@@ -229,12 +232,13 @@ export const skillGroups = [
   },
   {
     label: "Cloud & DevOps practice",
-    text: "Hands-on course and project work across containers, Linux and cloud configuration; studying Cloud & DevOps Engineering.",
+    text: "Hands-on labs across containers, Linux, EC2, DNS and web deployment, plus guided CI/CD and architecture work.",
     tags: [
       "Docker / Compose",
       "AWS EC2",
       "Ubuntu / SSH",
       "Nginx / DNS / HTTPS",
+      "GitHub Actions",
     ],
   },
 ];

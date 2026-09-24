@@ -18,8 +18,8 @@ const experience = [
     role: "Telco Pole & Structural Design Engineer",
     place: "Oversea Deco & Industrial Sdn Bhd",
     points: [
-      "Analysed telecommunications poles and high-mast structures using STAAD.Pro/OpenTower and prepared AutoCAD technical drawings.",
-      "Followed up design issues and site constraints with technical stakeholders; documented changes and clarified drawings for implementation.",
+      "Analysed telecommunications monopoles and high masts using STAAD.Pro, MS Tower and OpenTower; prepared GA and fabrication drawings in AutoCAD.",
+      "Supported site inspections and as-built checks, then followed up design comments, fabrication needs and site constraints with technical stakeholders.",
       "Balanced structural requirements, constructability and practical design trade-offs while keeping technical handoffs clear.",
     ],
   },
@@ -28,7 +28,7 @@ const experience = [
     role: "Junior Engineer",
     place: "Perunding ZAB Sdn Bhd",
     points: [
-      "Supported reinforced-concrete, steel and foundation design work, technical calculations and drawings.",
+      "Supported reinforced-concrete, steel and foundation design, pile-capacity analysis, and water-reticulation and sewerage documentation.",
       "Assisted authority submissions and coordinated design queries with clients, architects, authorities and site stakeholders.",
       "Tracked technical comments and revisions through formal submission and delivery processes.",
     ],
@@ -37,10 +37,21 @@ const experience = [
 
 const capabilities = [
   {
+    title: "Business ownership & operations",
+    context: "Direct Sarang co-owner work",
+    items: [
+      "Menu, stock and replenishment decisions",
+      "Staff SOPs and customer service",
+      "Sales, costs and expense allocation",
+      "Partner communication and prioritisation",
+    ],
+  },
+  {
     title: "Structural engineering & coordination",
     context: "Professional civil-engineering work",
     items: [
-      "Structural analysis and technical drawings",
+      "Telco, RC, steel and foundation design",
+      "GA/fabrication drawings and site checks",
       "Client and site-stakeholder coordination",
       "Authority-submission support",
       "Design queries, revisions and handoffs",
@@ -70,10 +81,12 @@ const capabilities = [
     title: "Web product technologies",
     context: "Used in AI-assisted projects",
     items: [
+      "HTML/CSS, JavaScript and responsive UI",
       "React, Next.js, TypeScript",
       "Supabase, PostgreSQL, Prisma",
       "Fastify, REST APIs",
       "Vitest, Playwright, DeepSeek API",
+      "WordPress CMS migration planning",
     ],
   },
   {
@@ -84,7 +97,86 @@ const capabilities = [
       "AWS EC2, Ubuntu and SSH",
       "Nginx, HTTPS and Cloudflare DNS",
       "Git/GitHub and environment configuration",
+      "GitHub Actions and Docker Hub workflows",
     ],
+  },
+];
+
+const businessPillars = [
+  {
+    label: "01 / OWNERSHIP",
+    title: "Run the business, not just the website",
+    copy: "As a Sarang co-owner, I make day-to-day decisions about the bites offering, customer experience, stock and operating priorities with my partner.",
+    points: ["Products and menu decisions", "Purchasing, replenishment and supplier follow-up", "Sales and cost visibility"],
+  },
+  {
+    label: "02 / PEOPLE & SERVICE",
+    title: "Keep the counter consistent",
+    copy: "I train five part-time staff on practical SOPs and help resolve customer-facing issues. TikTok Live gives me another direct channel to understand and engage customers.",
+    points: ["Staff training and shift routines", "Customer communication", "Live promotion and feedback"],
+  },
+  {
+    label: "03 / COSTS & PARTNERS",
+    title: "Make the money understandable",
+    copy: "I distinguish direct product costs from shared expenses and work through partner allocations, reimbursements and what an owner actually needs to see in the books.",
+    points: ["Direct versus shared costs", "Expense-split rules", "Traceable sales and corrections"],
+  },
+  {
+    label: "04 / PRODUCT JUDGMENT",
+    title: "Turn operations into clear rules",
+    copy: "Sarang's real orders, discounts, shifts and exceptions inform my requirements for Vista. I prefer simpler QR-first cashier flows over controls that slow staff without adding value.",
+    points: ["Owner and cashier workflows", "Edge cases and acceptance criteria", "Practical scope decisions"],
+  },
+  {
+    label: "05 / DIGITAL PRESENCE",
+    title: "Connect offline work to online delivery",
+    copy: "I directed and deployed Sarang's AI-assisted website, worked with its domain setup, and use the live business to validate whether digital features solve genuine operating problems.",
+    points: ["Website and domain delivery", "Business content decisions", "Real-user feedback into iteration"],
+  },
+  {
+    label: "06 / TRANSFERABLE VALUE",
+    title: "Bridge commercial and technical teams",
+    copy: "I can explain a workflow from the perspectives of the owner, cashier and customer, then translate those differences into priorities for a product or implementation team.",
+    points: ["Stakeholder communication", "Process documentation", "Decision and handoff clarity"],
+  },
+];
+
+const devopsPillars = [
+  {
+    label: "01 / CLOUD & EDGE",
+    title: "Make the service reachable",
+    copy: "In guided deployment work, I provisioned Ubuntu on AWS EC2, configured Security Groups and Elastic IP, connected with SSH, and routed domains with Cloudflare DNS.",
+    points: ["EC2, inbound rules and static IPs", "A/CNAME records, nameservers and TTL", "Cloudflare Pages and custom domains"],
+  },
+  {
+    label: "02 / LINUX OPERATIONS",
+    title: "Understand the host",
+    copy: "I used apt, file ownership and service directories, checked ports and resource usage, and managed a Node process with systemd rather than leaving it attached to a terminal.",
+    points: ["SSH keys, scp and permissions", "systemctl and journal logs", "Process, memory, disk and port checks"],
+  },
+  {
+    label: "03 / CONTAINERS",
+    title: "Package and run applications",
+    copy: "I built a Node 20 Alpine Docker image for an Express API, mapped container ports, and worked through the difference between build-time success and runtime behaviour.",
+    points: ["Dockerfiles and image builds", "Container lifecycle and logs", "Host/container networking"],
+  },
+  {
+    label: "04 / DATA SERVICES",
+    title: "Persist and connect data",
+    copy: "I configured MySQL, PostgreSQL and MongoDB with Docker Compose, environment-based credentials, ports and persistent volumes, then checked access with database clients.",
+    points: ["Compose services and named volumes", "DBeaver and MongoDB Compass", "Database connection diagnostics"],
+  },
+  {
+    label: "05 / WEB DELIVERY",
+    title: "Route traffic and secure it",
+    copy: "I configured Nginx virtual hosts and reverse proxying to a local API, tested configuration, and practised HTTPS setup with Let's Encrypt Certbot.",
+    points: ["Nginx and proxy_pass", "DNS-to-origin routing", "TLS certificates and reachability checks"],
+  },
+  {
+    label: "06 / VERSIONING & CI/CD",
+    title: "Follow a release through",
+    copy: "I use Git branches and pull requests. Coursework covered GitHub Actions build/test gates, artifacts, repository Secrets and Variables, Docker Hub images and SSH-based EC2 deployment.",
+    points: ["Git and PR workflow", "Build, test and artifact handoff", "Image publishing and deployment patterns"],
   },
 ];
 
@@ -142,7 +234,7 @@ function About() {
         <div>
           <p className="eyebrow">01 / PROFESSIONAL SUMMARY</p>
           <h2 id="cv-summary-title">
-            A practical bridge between operations and technology.
+            Business, engineering and technical delivery together.
           </h2>
         </div>
         <div className="cv-summary-copy">
@@ -216,14 +308,19 @@ function About() {
         <div className="section-intro">
           <div>
             <p className="eyebrow">03 / BUSINESS IN PRACTICE</p>
-            <h2 id="business-depth-title">Business decisions<br /><em>behind the software.</em></h2>
+            <h2 id="business-depth-title">Ownership in practice.<br /><em>Judgment in delivery.</em></h2>
           </div>
           <p className="section-intro-side">Sarang is a business I co-own, not just a case study. Its day-to-day work gives my product choices a reality check.</p>
         </div>
         <div className="cv-depth-grid">
-          <article><span>01 / RUN THE OPERATION</span><h3>People, product, customers</h3><p>I handle bites products, replenishment, customer-facing service and staff routines. Training five part-time staff means writing processes they can actually follow during a shift.</p></article>
-          <article><span>02 / UNDERSTAND THE MONEY</span><h3>Costs and accountability</h3><p>Sales, direct costs, shared expenses and partner allocations need different treatment. I work through those distinctions with the people affected before turning them into system rules.</p></article>
-          <article><span>03 / CHOOSE THE RIGHT SCOPE</span><h3>Keep the counter simple</h3><p>For Vista, I favoured QR-first operations and removed unnecessary cashier PIN and cash-drawer steps. Owner visibility matters, but extra screens must earn their place.</p></article>
+          {businessPillars.map((pillar) => (
+            <article key={pillar.label}>
+              <span>{pillar.label}</span>
+              <h3>{pillar.title}</h3>
+              <p>{pillar.copy}</p>
+              <ul className="cv-depth-list">{pillar.points.map((point) => <li key={point}>{point}</li>)}</ul>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -237,14 +334,14 @@ function About() {
             <article>
               <span className="engineering-kicker">OVERSEA DECO & INDUSTRIAL · 2025–2026</span>
               <h3>Telco pole & structural design</h3>
-              <p>Analysed telecommunications structures with STAAD.Pro and OpenTower, prepared AutoCAD drawings and worked through design comments, site constraints and implementation follow-up.</p>
-              <ul><li>Structural modelling and load-path thinking</li><li>Technical drawings and revision control</li><li>Design clarification with project stakeholders</li></ul>
+              <p>Analysed telecommunications monopoles and high masts with STAAD.Pro, MS Tower and OpenTower. Prepared GA and fabrication drawings, supported site/as-built checks and worked through design comments, fabrication requirements and implementation follow-up.</p>
+              <ul><li>Structural modelling and load-path thinking</li><li>AutoCAD drawings and revision control</li><li>Site verification and stakeholder clarification</li></ul>
             </article>
             <article>
               <span className="engineering-kicker">PERUNDING ZAB · 2025</span>
               <h3>Building and infrastructure design support</h3>
-              <p>Supported reinforced-concrete, steel and foundation design and associated documentation. Assisted with authority submissions and coordinated design queries among clients, architects, authorities and site teams.</p>
-              <ul><li>Interpreting requirements and constraints</li><li>Submission and technical-approval follow-up</li><li>Client-facing and multidisciplinary coordination</li></ul>
+              <p>Supported reinforced-concrete, steel and foundation design, pile-capacity analysis, and water-reticulation and sewerage documentation. Assisted authority submissions and coordinated design queries among clients, architects, authorities and site teams.</p>
+              <ul><li>ProtaStructure, STAAD.Pro and AllPile exposure</li><li>Submission and technical-approval follow-up</li><li>Client-facing and multidisciplinary coordination</li></ul>
             </article>
           </div>
           <div className="engineering-transfer"><strong>What transfers into tech work</strong><p>Decompose complex problems, record assumptions, respond to review comments, align multiple stakeholders, and carry a decision through to a clear handoff.</p></div>
@@ -258,11 +355,16 @@ function About() {
             <p className="section-intro-side">Course-guided practical work and test deployments, with the boundaries of that experience stated clearly.</p>
           </div>
           <div className="cv-depth-grid">
-            <article><span>01 / PACKAGE</span><h3>Containers and data</h3><p>Built a Node/Express image using Docker, mapped ports and worked with Compose services for MySQL, PostgreSQL and MongoDB. Used env files and volumes to separate configuration from code and persist data.</p></article>
-            <article><span>02 / RUN</span><h3>Linux and cloud</h3><p>Practised Ubuntu EC2 provisioning, SSH keys, Security Groups and Elastic IP; used Linux tools for ownership, processes, ports, memory and disk checks. Configured Nginx reverse proxy, DNS and HTTPS in test deployment work.</p></article>
-            <article><span>03 / DELIVER</span><h3>Workflow and release</h3><p>Used Git branches and pull requests; studied GitHub Actions pipelines, Docker Hub image delivery, deployment secrets and Cloudflare Pages. I check builds and runtime behaviour separately when troubleshooting.</p></article>
+            {devopsPillars.map((pillar) => (
+              <article key={pillar.label}>
+                <span>{pillar.label}</span>
+                <h3>{pillar.title}</h3>
+                <p>{pillar.copy}</p>
+                <ul className="cv-depth-list">{pillar.points.map((point) => <li key={point}>{point}</li>)}</ul>
+              </article>
+            ))}
           </div>
-          <p className="cv-devops-note">I am studying Cloud & DevOps Engineering. Kubernetes, Terraform, ALB and RDS are course-pathway or conceptual exposure—not a claim that I have operated them in production.</p>
+          <p className="cv-devops-note">These are guided labs and test deployments, not production SRE ownership. I have also studied architecture topics such as ALB, private RDS, ACM, Secrets Manager, Terraform and Kubernetes; I do not claim to have operated those in production.</p>
         </div>
       </section>
 
