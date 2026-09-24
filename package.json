@@ -1,7 +1,7 @@
 {
-  "name": "devops-portfolio",
+  "name": "hariz-portfolio",
   "version": "1.0.0",
-  "description": "DevOps Engineer Portfolio - React Static Website",
+  "description": "Hariz Helmi's product, systems and cloud portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
