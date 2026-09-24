@@ -35,6 +35,16 @@ function Contact() {
             <strong>GitHub</strong>
             <span aria-hidden="true">↗</span>
           </a>
+          <a href={identity.whatsapp} target="_blank" rel="noopener noreferrer">
+            <span>MESSAGE ME NOW</span>
+            <strong>WhatsApp</strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href={identity.phoneHref}>
+            <span>CALL DIRECTLY</span>
+            <strong>{identity.phone}</strong>
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
       <section className="wrap contact-note">

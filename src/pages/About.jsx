@@ -7,9 +7,10 @@ const experience = [
     role: "Co-operator, Operations & Digital Product Contributor",
     place: "Sarang · UKM Bangi",
     points: [
-      "Co-run an F&B kiosk; manage bites products, restocking, customer service and day-to-day sales and cost decisions.",
-      "Train five part-time staff on operating procedures and support customer engagement as a TikTok Live host.",
-      "Use first-hand ordering, payment and shift scenarios to define and validate requirements for the Vista POS and management system.",
+      "Co-run an F&B kiosk, managing bites products, purchasing and restocking, customer service, and day-to-day sales and cost decisions.",
+      "Train five part-time staff on SOPs and support customer engagement as a TikTok Live host.",
+      "Translate real ordering, payment, shift and expense-split scenarios into requirements and test cases for Vista.",
+      "Balance partner accountability with simple counter routines: focus on useful reporting and avoid unnecessary cashier steps.",
     ],
   },
   {
@@ -82,7 +83,7 @@ const education = [
     title: "Cloud & DevOps Engineering Programme",
     place: "Lejiend Education",
     detail:
-      "Hands-on Dockerfiles, Docker Compose, Linux/Ubuntu, EC2 deployment fundamentals, SSH, Nginx, DNS, HTTPS, container networking and databases. GitHub Actions CI/CD covered in coursework; Kubernetes is an upcoming module.",
+      "Hands-on Dockerfiles, Docker Compose, Ubuntu, EC2 deployment, SSH, Nginx, DNS, HTTPS, container networking and databases. GitHub Actions CI/CD in coursework; Kubernetes and Terraform are course-pathway topics, not production claims.",
   },
   {
     period: "OCT 2020 — FEB 2025",
@@ -192,6 +193,7 @@ function About() {
                       <li key={point}>{point}</li>
                     ))}
                   </ul>
+                  {item.place.startsWith("Sarang") && <a className="text-link sarang-inline-link" href={identity.sarang} target="_blank" rel="noopener noreferrer">Visit the Sarang website <span aria-hidden="true">↗</span></a>}
                 </div>
               </article>
             ))}
@@ -199,10 +201,41 @@ function About() {
         </div>
       </section>
 
+      <section className="section wrap cv-depth-section" aria-labelledby="business-depth-title">
+        <div className="section-intro">
+          <div>
+            <p className="eyebrow">03 / BUSINESS IN PRACTICE</p>
+            <h2 id="business-depth-title">Business decisions<br /><em>behind the software.</em></h2>
+          </div>
+          <p className="section-intro-side">Sarang is not just a case study. It is the working business that gives my product choices a reality check.</p>
+        </div>
+        <div className="cv-depth-grid">
+          <article><span>01 / RUN THE OPERATION</span><h3>People, product, customers</h3><p>I handle bites products, replenishment, customer-facing service and staff routines. Training five part-time staff means writing processes they can actually follow during a shift.</p></article>
+          <article><span>02 / UNDERSTAND THE MONEY</span><h3>Costs and accountability</h3><p>Sales, direct costs, shared expenses and partner allocations need different treatment. I work through those distinctions with the people affected before turning them into system rules.</p></article>
+          <article><span>03 / CHOOSE THE RIGHT SCOPE</span><h3>Keep the counter simple</h3><p>For Vista, I favoured QR-first operations and removed unnecessary cashier PIN and cash-drawer steps. Owner visibility matters, but extra screens must earn their place.</p></article>
+        </div>
+        <a className="button button-dark cv-business-link" href={identity.sarang} target="_blank" rel="noopener noreferrer">Explore Sarang website <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section className="cv-devops-section" aria-labelledby="devops-depth-title">
+        <div className="wrap">
+          <div className="section-intro">
+            <div><p className="eyebrow">04 / CLOUD & DEVOPS PRACTICE</p><h2 id="devops-depth-title">From local build<br /><em>to reachable service.</em></h2></div>
+            <p className="section-intro-side">Course-guided practical work and test deployments, with the boundaries of that experience stated clearly.</p>
+          </div>
+          <div className="cv-depth-grid">
+            <article><span>01 / PACKAGE</span><h3>Containers and data</h3><p>Built a Node/Express image using Docker, mapped ports and worked with Compose services for MySQL, PostgreSQL and MongoDB. Used env files and volumes to separate configuration from code and persist data.</p></article>
+            <article><span>02 / RUN</span><h3>Linux and cloud</h3><p>Practised Ubuntu EC2 provisioning, SSH keys, Security Groups and Elastic IP; used Linux tools for ownership, processes, ports, memory and disk checks. Configured Nginx reverse proxy, DNS and HTTPS in test deployment work.</p></article>
+            <article><span>03 / DELIVER</span><h3>Workflow and release</h3><p>Used Git branches and pull requests; studied GitHub Actions pipelines, Docker Hub image delivery, deployment secrets and Cloudflare Pages. I check builds and runtime behaviour separately when troubleshooting.</p></article>
+          </div>
+          <p className="cv-devops-note">I am studying Cloud & DevOps Engineering. Kubernetes, Terraform, ALB and RDS are course-pathway or conceptual exposure—not a claim that I have operated them in production.</p>
+        </div>
+      </section>
+
       <section className="section wrap" aria-labelledby="cv-skills-title">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">03 / SKILLS & TOOLS</p>
+            <p className="eyebrow">05 / SKILLS & TOOLS</p>
             <h2 id="cv-skills-title">
               What I can
               <br />
@@ -237,6 +270,7 @@ function About() {
             expertise.
           </p>
         </div>
+        <Link className="text-link cv-all-skills-link" to="/skills">View the full skills inventory <span aria-hidden="true">↗</span></Link>
       </section>
 
       <section
@@ -245,7 +279,7 @@ function About() {
       >
         <div className="wrap cv-education-layout">
           <div>
-            <p className="eyebrow">04 / EDUCATION & DEVELOPMENT</p>
+            <p className="eyebrow">06 / EDUCATION & DEVELOPMENT</p>
             <h2 id="education-title">
               Formal training.
               <br />
@@ -267,7 +301,7 @@ function About() {
 
       <section className="wrap cv-endnote">
         <div>
-          <p className="eyebrow">05 / PROJECT EVIDENCE</p>
+          <p className="eyebrow">07 / PROJECT EVIDENCE</p>
           <h2>See the decisions in context.</h2>
           <p>
             The project case studies show my part in each build, its technical

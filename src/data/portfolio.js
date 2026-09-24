@@ -1,6 +1,10 @@
 export const identity = {
   name: "Hariz Helmi",
   email: "harizhelmiwork@gmail.com",
+  phone: "+60 19-651 6360",
+  phoneHref: "tel:+60196516360",
+  whatsapp: "https://wa.me/60196516360",
+  sarang: "https://sarangburunghantu.my",
   github: "https://github.com/hariz2001-del",
   linkedin: "https://www.linkedin.com/in/hariz-helmi-9a35372b8",
   location: "Kuala Lumpur, Malaysia",
@@ -14,30 +18,37 @@ export const projects = [
     status: "On hold",
     theme: "calli",
     lead: "A POS and back-office system shaped by how small food businesses actually run.",
+    problem: "Owners and cashiers needed clearer ways to handle orders, shifts, stock, costs and partner accountability.",
     contribution:
       "Defined cashier and owner workflows, payment states, inventory and costing rules, and shared-expense logic. Reviewed the AI-assisted implementation against real operating scenarios.",
-    stack: ["Next.js", "Supabase", "PostgreSQL", "Prisma"],
+    stack: ["Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Prisma", "Vitest"],
     details: [
       "Mapped owner and cashier journeys across ordering, shifts, inventory, costing and reporting.",
+      "Worked through modifier ordering, tenant-scoped access, expense allocation and traceable sales corrections.",
       "Specified payment states, shared-expense rules and operational accountability from real stall scenarios.",
       "The project is currently on hold; this case study describes the work completed, not an active service.",
     ],
+    aiNote: "AI-assisted implementation. My direct work was requirements, operational rules, product decisions and scenario testing.",
   },
   {
     number: "02",
     name: "Vista",
     type: "Internal POS & restaurant management",
-    status: "In development",
+    status: "Internal pilot",
     theme: "vista",
     lead: "A QR-first ordering system for the kiosk I help operate.",
+    problem: "The counter needed resilient cashless sales while owners needed a clear view of money movement and partner settlement.",
     contribution:
-      "Mapped paid, cancelled and offline checkout states; simplified cashier access; tested the design against day-to-day kiosk work. Expense and settlement features are still being built.",
-    stack: ["React", "Fastify", "PostgreSQL", "Prisma"],
+      "Mapped paid, cancelled and offline checkout states; simplified cashier access; tested the design against day-to-day kiosk work. Reviewed owner cashflow and settlement rules against the real business.",
+    stack: ["React", "Vite", "TypeScript", "PWA", "Fastify", "PostgreSQL", "Prisma", "Supabase", "Vercel"],
     details: [
       "Designed QR-only ordering for a real kiosk and removed unnecessary cashier PIN and cash-drawer steps.",
-      "Worked through paid and cancelled states, offline checkout, discount thresholds and data consistency.",
-      "Expense, settlement, cashflow and period-closure features remain unfinished.",
+      "Worked through paid and cancelled states, offline checkout, discount allocation and data consistency.",
+      "Touch-first POS supports catalogue, modifiers, discounts, shift flows and paid-sale corrections.",
+      "Offline sales queue for later sync; the owner dashboard covers overview, cashflow, expenses, settlement, menu and settings.",
+      "Connected POS, RMS and API are deployed for internal testing; further hardening and validation are needed before customer use.",
     ],
+    aiNote: "AI-assisted development. My direct contribution is operating requirements, scope, business rules, scenario tests and review.",
   },
   {
     number: "03",
@@ -46,6 +57,7 @@ export const projects = [
     status: "Live preview",
     theme: "tutor",
     lead: "Learning tools that point back to the course material instead of relying on model recall.",
+    problem: "Students need practice and explanations with traceable sources; lecturers need review control over generated questions.",
     contribution:
       "Structured source-page citations, learner and lecturer flows, assessments and review controls. Integrated a DeepSeek question flow and checked core paths with automated tests; course questions remain subject to approval.",
     stack: ["Next.js", "Supabase", "DeepSeek API", "Vitest", "Playwright"],
@@ -56,6 +68,7 @@ export const projects = [
       "Shaped learner and lecturer journeys, assessments, approval controls and a DeepSeek-backed question flow.",
       "Reviewed draft course questions and checked core paths with automated tests and build verification.",
     ],
+    aiNote: "AI-assisted implementation and DeepSeek-powered question flow; I shaped source grounding and review rules.",
   },
   {
     number: "04",
@@ -64,6 +77,7 @@ export const projects = [
     status: "Live preview",
     theme: "pmni",
     lead: "Making a complex institution understandable to prospective students and families.",
+    problem: "A dense 20-page institutional profile needed to become clear, navigable website content.",
     contribution:
       "Translated a 20-page source profile into an eight-page site and checked 264 navigation links. The current site is static; WordPress is a future migration plan.",
     stack: ["HTML", "CSS", "JavaScript", "Content architecture"],
@@ -74,6 +88,7 @@ export const projects = [
       "Audited content against the source and checked 264 navigation links.",
       "Prepared the information structure for a future WordPress migration; the current site is static.",
     ],
+    aiNote: "AI-assisted website implementation; I led content structure, source checks and quality review.",
   },
   {
     number: "05",
@@ -82,6 +97,7 @@ export const projects = [
     status: "Live storefront",
     theme: "strapz",
     lead: "A clear route from choosing a product to placing an order.",
+    problem: "Shoppers needed a usable catalogue and checkout without implying an automated payment or fulfilment backend existed.",
     contribution:
       "Worked on catalogue, variants, cart and DuitNow QR checkout with manual WhatsApp fulfilment. A payment gateway and transaction backend are not part of the current storefront.",
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
@@ -92,6 +108,7 @@ export const projects = [
       "Supported DuitNow QR checkout and manual WhatsApp fulfilment.",
       "The current storefront does not include an integrated payment gateway or transaction backend.",
     ],
+    aiNote: "AI-assisted web implementation; I reviewed the buying flow and operational handoff.",
   },
   {
     number: "06",
@@ -100,6 +117,7 @@ export const projects = [
     status: "Course project",
     theme: "devops",
     lead: "Learning how software reaches and runs on a server.",
+    problem: "I wanted to understand how a frontend, API and database become a reachable application, beyond simply deploying a build.",
     contribution:
       "Containerised an Express API, configured Compose services for MySQL, PostgreSQL and MongoDB, and practised an Ubuntu EC2 deployment with SSH, Nginx, HTTPS and Cloudflare DNS. This was a learning deployment, not a production service.",
     stack: ["Docker", "Docker Compose", "AWS EC2", "Ubuntu", "Nginx"],
@@ -109,7 +127,9 @@ export const projects = [
       "Containerised an Express API with a Node 20 Alpine Dockerfile.",
       "Configured MySQL, PostgreSQL and MongoDB Compose services with env values, port mapping and volumes.",
       "Practised an Ubuntu EC2 test deployment using SSH, Security Groups, Elastic IP, Nginx, HTTPS and Cloudflare DNS.",
+      "Covered Git branching, pull requests, GitHub Actions CI/CD, Docker Hub delivery and secrets/environment handling.",
     ],
+    aiNote: "Guided course practice and test deployment, not an independently operated production service.",
   },
   {
     number: "07",
@@ -118,20 +138,46 @@ export const projects = [
     status: "Live website",
     theme: "sarang",
     lead: "A digital front door for the F&B business I help run.",
+    problem: "The kiosk needed an online presence and consistent routines behind the counter.",
     contribution:
       "Built and deployed the website with AI-assisted HTML/CSS, configured the custom domain, and brought the same operating knowledge into staff SOPs, inventory and Vista requirements.",
     stack: ["HTML", "CSS", "Vercel", "Cloudflare DNS"],
     link: "https://sarangburunghantu.my",
-    linkLabel: "Visit website",
+    linkLabel: "Visit Sarang website",
     details: [
       "Built and deployed the business website with AI-assisted HTML/CSS and a custom domain.",
       "Co-run kiosk operations, including bites products, restocking, customer-facing work and staff SOPs.",
       "Use those operating observations to validate Vista’s POS and management requirements.",
     ],
+    aiNote: "AI-assisted HTML/CSS website build; the business operations and product decisions are my direct work.",
+  },
+  {
+    number: "08",
+    name: "This portfolio",
+    type: "Professional portfolio & CV",
+    status: "Live website",
+    theme: "portfolio",
+    lead: "An evidence-led record of my business, engineering and technical work.",
+    problem: "A one-page resume cannot show the reasoning, project boundaries and range behind each headline skill.",
+    contribution: "I selected the work, clarified my contribution and directed the content and design iteration.",
+    stack: ["React", "Vite", "React Router", "CSS", "GitHub", "Cloudflare Pages"],
+    link: "https://github.com/hariz2001-del/my-portfolio",
+    linkLabel: "View source",
+    details: [
+      "Responsive CV, project case studies, skills inventory and direct contact shortcuts.",
+      "Structured project data keeps status, stack and AI-assistance disclosures consistent.",
+      "React/Vite frontend built for Cloudflare Pages, with build checks before release.",
+    ],
+    aiNote: "AI-assisted code and design implementation; I directed the content and reviewed the published claims.",
   },
 ];
 
 export const skillGroups = [
+  {
+    label: "Business & operations",
+    text: "Direct work running an F&B kiosk: customer service, staff routines, replenishment, sales and practical cost decisions.",
+    tags: ["F&B operations", "Staff SOPs", "Restocking", "Customer service", "Sales & costs"],
+  },
   {
     label: "Systems & product",
     text: "Requirements, workflows, user roles, business rules, stakeholder communication and operational trade-offs.",
@@ -143,7 +189,7 @@ export const skillGroups = [
     ],
   },
   {
-    label: "Technical delivery",
+    label: "Digital delivery",
     text: "AI-assisted web implementation, code review, API integration, testing, troubleshooting and release checks.",
     tags: [
       "React / Next.js",

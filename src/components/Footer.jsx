@@ -10,7 +10,7 @@ function Footer() {
             HARIZ<span>·</span>HELMI
           </Link>
           <p>
-            Systems thinking for useful digital work.
+            Business, engineering and technology in practice.
             <br />
             Kuala Lumpur, Malaysia.
           </p>
@@ -19,6 +19,7 @@ function Footer() {
           <div>
             <span>EXPLORE</span>
             <Link to="/projects">Projects</Link>
+            <Link to="/skills">Skills</Link>
             <Link to="/cv">Detailed CV</Link>
             <Link to="/contact">Contact</Link>
           </div>
@@ -35,6 +36,8 @@ function Footer() {
               LinkedIn ↗
             </a>
             <a href={`mailto:${identity.email}`}>Email ↗</a>
+            <a href={identity.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+            <a href={identity.phoneHref}>Call ↗</a>
           </div>
         </div>
       </div>

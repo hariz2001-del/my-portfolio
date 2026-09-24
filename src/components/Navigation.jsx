@@ -4,6 +4,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 const links = [
   { to: "/", label: "Home" },
   { to: "/projects", label: "Projects" },
+  { to: "/skills", label: "Skills" },
   { to: "/cv", label: "CV" },
   { to: "/contact", label: "Contact" },
 ];
@@ -28,7 +29,7 @@ function Navigation() {
             H<span>.</span>
           </span>
           <span className="brand-name">
-            HARIZ HELMI<small>PRODUCT / SYSTEMS / CLOUD</small>
+            HARIZ HELMI<small>BUSINESS / ENGINEERING / TECH</small>
           </span>
         </Link>
         <button

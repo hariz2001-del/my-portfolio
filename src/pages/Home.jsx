@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { projects, skillGroups } from "../data/portfolio";
+import { identity, projects, skillGroups } from "../data/portfolio";
 import ProjectCard from "../components/ProjectCard";
 
 function Home() {
@@ -11,12 +11,13 @@ function Home() {
             <span className="eyebrow-line" /> HARIZ HELMI · KUALA LUMPUR
           </p>
           <h1 id="hero-title">
-            From real operations to <em>useful systems.</em>
+            Business. Engineering. <em>Technology.</em>
           </h1>
           <p className="hero-description">
-            I’m a civil engineering graduate and F&B co-operator who turns
-            operating problems into product requirements, reviews AI-assisted
-            web builds and follows delivery through testing and deployment.
+            I bring operating judgment, engineering discipline and technical
+            curiosity to useful digital work. I co-run an F&B business, shape
+            products around real workflows, and study cloud and DevOps while
+            delivering AI-assisted web projects.
           </p>
           <div className="hero-actions">
             <Link className="button button-dark" to="/cv">
@@ -34,53 +35,53 @@ function Home() {
         <div
           className="hero-art"
           role="img"
-          aria-label="A diagram showing how field observations become verified product workflows"
+          aria-label="A diagram of Hariz's business, engineering, product and cloud experience"
         >
           <div className="art-topline">
-            <span>FIELD NOTES / 001</span>
-            <span>PRODUCT THINKING</span>
+            <span>WORK / 001</span>
+            <span>FOUR CONNECTED LENSES</span>
           </div>
           <div className="art-heading">
-            From the floor
+            Different lenses.
             <br />
-            to the flow.
+            One way of working.
           </div>
           <div className="flow-stack">
             <div className="flow-row">
               <span className="flow-number">01</span>
               <div>
-                <strong>Observe the work</strong>
-                <small>What actually happens at the counter?</small>
+                <strong>Business operations</strong>
+                <small>Customers, staff, costs and decisions.</small>
               </div>
               <span className="flow-glyph">↘</span>
             </div>
             <div className="flow-row">
               <span className="flow-number">02</span>
               <div>
-                <strong>Define the rules</strong>
-                <small>Orders, roles, exceptions, accountability.</small>
+                <strong>Engineering discipline</strong>
+                <small>Analysis, constraints and documentation.</small>
               </div>
               <span className="flow-glyph">↘</span>
             </div>
             <div className="flow-row">
               <span className="flow-number">03</span>
               <div>
-                <strong>Shape the product</strong>
-                <small>Useful flows before extra features.</small>
+                <strong>Digital products</strong>
+                <small>Requirements, delivery and validation.</small>
               </div>
               <span className="flow-glyph">↘</span>
             </div>
             <div className="flow-row flow-final">
               <span className="flow-number">04</span>
               <div>
-                <strong>Verify in context</strong>
-                <small>Test the edges, then watch it work.</small>
+                <strong>Cloud practice</strong>
+                <small>Containers, Linux and deployment paths.</small>
               </div>
               <span className="flow-glyph">✓</span>
             </div>
           </div>
           <div className="art-stamp">
-            SYSTEMS THAT FIT REAL LIFE <span>✳</span>
+            CONNECTING DISCIPLINES <span>✳</span>
           </div>
         </div>
       </section>
@@ -96,7 +97,7 @@ function Home() {
             <span>Co-operator, Sarang F&B kiosk</span>
           </div>
           <div>
-            <strong>07</strong>
+            <strong>08</strong>
             <span>Documented product, website & cloud projects</span>
           </div>
           <div>
@@ -135,7 +136,8 @@ function Home() {
             <h3>Business operations</h3>
             <p>
               Co-run Sarang’s kiosk, train five staff and turn live F&B
-              scenarios into requirements for internal tools.
+              scenarios into requirements for internal tools. See the{" "}
+              <a className="inline-link" href={identity.sarang} target="_blank" rel="noopener noreferrer">Sarang website ↗</a>.
             </p>
           </article>
           <article>
@@ -150,8 +152,8 @@ function Home() {
             <span>2026 — PRESENT</span>
             <h3>Digital & cloud practice</h3>
             <p>
-              Deliver AI-assisted web projects and practise Docker, Linux and
-              AWS deployment through DevOps coursework.
+              Deliver AI-assisted web projects; practise Docker, Compose,
+              Linux, EC2, Nginx, DNS and CI/CD through DevOps coursework.
             </p>
           </article>
         </div>
@@ -192,7 +194,7 @@ function Home() {
           <div className="approach-heading">
             <p className="eyebrow">03 / HOW I ADD VALUE</p>
             <h2 id="approach-title">
-              Technical enough to build.
+              Technical enough to deliver.
               <br />
               <em>Close enough to the work to get it right.</em>
             </h2>
@@ -239,8 +241,9 @@ function Home() {
             </h2>
           </div>
           <p className="section-intro-side">
-            I use AI-assisted development transparently. The value I own is the
-            problem framing, decisions, validation and delivery around the code.
+            From staff operations and stakeholder requirements to product
+            review, web delivery and cloud practice—each skill is tied to its
+            real context.
           </p>
         </div>
         <div className="skills-grid">
@@ -261,6 +264,7 @@ function Home() {
           Kubernetes is an upcoming course module, not claimed as production
           experience.
         </p>
+        <Link className="text-link skills-more-link" to="/skills">Explore the full skills inventory <span aria-hidden="true">↗</span></Link>
       </section>
 
       <section className="cta-section">

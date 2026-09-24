@@ -12,9 +12,9 @@ function Projects() {
           <em>My part in it.</em>
         </h1>
         <p>
-          A closer look at the problem, what I contributed, the tools used and
-          what is live or unfinished. Aztech Calli is on hold, so its live link
-          has been removed.
+          The problem, my contribution, features, stack, status and where AI
+          assisted each build. Aztech Calli is on hold, so its live link has
+          been removed; Vista remains an internal pilot.
         </p>
       </section>
       <section
