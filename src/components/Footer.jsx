@@ -19,7 +19,7 @@ function Footer() {
           <div>
             <span>EXPLORE</span>
             <Link to="/projects">Projects</Link>
-            <Link to="/about">About</Link>
+            <Link to="/cv">Detailed CV</Link>
             <Link to="/contact">Contact</Link>
           </div>
           <div>

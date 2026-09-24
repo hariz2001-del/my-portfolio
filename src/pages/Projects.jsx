@@ -5,16 +5,16 @@ function Projects() {
   return (
     <>
       <section className="page-hero wrap">
-        <p className="eyebrow">PROJECTS / 2026</p>
+        <p className="eyebrow">PROJECT CASE STUDIES / 2026</p>
         <h1>
-          Selected work.
+          The work, in detail.
           <br />
-          <em>Real constraints.</em>
+          <em>My part in it.</em>
         </h1>
         <p>
-          Products and websites shaped by business rules, content accuracy, user
-          journeys and hands-on delivery. Development status is noted where a
-          project is still evolving.
+          A closer look at the problem, what I contributed, the tools used and
+          what is live or unfinished. Aztech Calli is on hold, so its live link
+          has been removed.
         </p>
       </section>
       <section

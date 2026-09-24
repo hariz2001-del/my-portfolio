@@ -14,9 +14,10 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 const titles = {
-  "/": "Hariz Helmi — Product, Systems & Cloud",
+  "/": "Hariz Helmi — CV, Projects & Technical Work",
   "/projects": "Projects — Hariz Helmi",
-  "/about": "About — Hariz Helmi",
+  "/about": "Professional Profile — Hariz Helmi",
+  "/cv": "Professional Profile & CV — Hariz Helmi",
   "/contact": "Contact — Hariz Helmi",
 };
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
+            <Route path="/cv" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Home />} />
           </Routes>

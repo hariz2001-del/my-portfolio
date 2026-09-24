@@ -11,24 +11,24 @@ function Home() {
             <span className="eyebrow-line" /> HARIZ HELMI · KUALA LUMPUR
           </p>
           <h1 id="hero-title">
-            I turn real-world complexity into <em>usable systems.</em>
+            From real operations to <em>useful systems.</em>
           </h1>
           <p className="hero-description">
-            Product-minded systems analysis, AI-assisted web delivery and
-            growing cloud/DevOps practice—grounded in hands-on business
-            operations and an engineering background.
+            I’m a civil engineering graduate and F&B co-operator who turns
+            operating problems into product requirements, reviews AI-assisted
+            web builds and follows delivery through testing and deployment.
           </p>
           <div className="hero-actions">
-            <Link className="button button-dark" to="/projects">
-              Explore my work <span aria-hidden="true">↗</span>
+            <Link className="button button-dark" to="/cv">
+              Read my CV <span aria-hidden="true">↗</span>
             </Link>
-            <Link className="text-link" to="/about">
-              How I work <span aria-hidden="true">↗</span>
+            <Link className="text-link" to="/projects">
+              Explore projects <span aria-hidden="true">↗</span>
             </Link>
           </div>
           <p className="hero-footnote">
-            <span className="pulse-dot" /> Open to product, implementation and
-            junior cloud opportunities
+            <span className="pulse-dot" /> Studying Cloud & DevOps Engineering
+            alongside hands-on product work
           </p>
         </div>
         <div
@@ -88,28 +88,79 @@ function Home() {
       <div className="proof-band" aria-label="Selected evidence">
         <div className="wrap proof-grid">
           <div>
+            <strong>2025</strong>
+            <span>B.Eng. (Hons), Civil Engineering</span>
+          </div>
+          <div>
+            <strong>2026</strong>
+            <span>Co-operator, Sarang F&B kiosk</span>
+          </div>
+          <div>
             <strong>07</strong>
-            <span>Projects across products, web & cloud</span>
+            <span>Documented product, website & cloud projects</span>
           </div>
           <div>
             <strong>05</strong>
             <span>Part-time staff trained on SOPs</span>
           </div>
-          <div>
-            <strong>03</strong>
-            <span>Database services in Docker Compose practice</span>
-          </div>
-          <div>
-            <strong>01</strong>
-            <span>Common thread: solving the right problem</span>
-          </div>
         </div>
       </div>
+
+      <section
+        className="section wrap home-cv-section"
+        aria-labelledby="career-title"
+      >
+        <div className="section-intro">
+          <div>
+            <p className="eyebrow">01 / CAREER AT A GLANCE</p>
+            <h2 id="career-title">
+              Experience that spans
+              <br />
+              <em>worksites and workflows.</em>
+            </h2>
+          </div>
+          <div className="section-intro-side">
+            <p>
+              My CV brings together operating a business, technical engineering
+              work and the digital systems built from those experiences.
+            </p>
+            <Link className="text-link" to="/cv">
+              Full professional profile <span aria-hidden="true">↗</span>
+            </Link>
+          </div>
+        </div>
+        <div className="home-cv-grid">
+          <article>
+            <span>2026 — PRESENT</span>
+            <h3>Business operations</h3>
+            <p>
+              Co-run Sarang’s kiosk, train five staff and turn live F&B
+              scenarios into requirements for internal tools.
+            </p>
+          </article>
+          <article>
+            <span>2025 — 2026</span>
+            <h3>Structural engineering</h3>
+            <p>
+              Prepared analyses and drawings, managed technical follow-up and
+              learned to document decisions under project constraints.
+            </p>
+          </article>
+          <article>
+            <span>2026 — PRESENT</span>
+            <h3>Digital & cloud practice</h3>
+            <p>
+              Deliver AI-assisted web projects and practise Docker, Linux and
+              AWS deployment through DevOps coursework.
+            </p>
+          </article>
+        </div>
+      </section>
 
       <section className="section wrap" aria-labelledby="work-title">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">01 / SELECTED WORK</p>
+            <p className="eyebrow">02 / SELECTED WORK</p>
             <h2 id="work-title">
               Work with a reason
               <br />
@@ -127,16 +178,19 @@ function Home() {
           </div>
         </div>
         <div className="featured-grid">
-          {projects.slice(0, 3).map((project) => (
-            <ProjectCard key={project.number} project={project} />
-          ))}
+          {projects
+            .filter((project) => project.status !== "On hold")
+            .slice(0, 3)
+            .map((project) => (
+              <ProjectCard key={project.number} project={project} />
+            ))}
         </div>
       </section>
 
       <section className="approach-section" aria-labelledby="approach-title">
         <div className="wrap approach-layout">
           <div className="approach-heading">
-            <p className="eyebrow">02 / HOW I ADD VALUE</p>
+            <p className="eyebrow">03 / HOW I ADD VALUE</p>
             <h2 id="approach-title">
               Technical enough to build.
               <br />
@@ -179,7 +233,7 @@ function Home() {
       <section className="section wrap" aria-labelledby="skills-title">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">03 / CAPABILITIES</p>
+            <p className="eyebrow">04 / CAPABILITIES</p>
             <h2 id="skills-title">
               A practical, <em>cross-disciplinary</em> toolkit.
             </h2>
@@ -212,7 +266,7 @@ function Home() {
       <section className="cta-section">
         <div className="wrap cta-layout">
           <div>
-            <p className="eyebrow">04 / NEXT CONVERSATION</p>
+            <p className="eyebrow">05 / NEXT CONVERSATION</p>
             <h2>
               Have a problem worth
               <br />
@@ -221,8 +275,8 @@ function Home() {
           </div>
           <div>
             <p>
-              I’m interested in roles where product judgment, technical
-              curiosity and dependable follow-through matter.
+              I’m interested in teams that value clear requirements, sound
+              technical judgment and dependable follow-through.
             </p>
             <Link className="button button-light" to="/contact">
               Get in touch <span aria-hidden="true">↗</span>

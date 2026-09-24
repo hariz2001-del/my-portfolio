@@ -11,14 +11,17 @@ export const projects = [
     number: "01",
     name: "Aztech Calli",
     type: "F&B operations platform",
-    status: "Live product",
+    status: "On hold",
     theme: "calli",
     lead: "A POS and back-office system shaped by how small food businesses actually run.",
     contribution:
       "Defined cashier and owner workflows, payment states, inventory and costing rules, and shared-expense logic. Reviewed the AI-assisted implementation against real operating scenarios.",
     stack: ["Next.js", "Supabase", "PostgreSQL", "Prisma"],
-    link: "https://calli.aztechdigital.my",
-    linkLabel: "Visit product",
+    details: [
+      "Mapped owner and cashier journeys across ordering, shifts, inventory, costing and reporting.",
+      "Specified payment states, shared-expense rules and operational accountability from real stall scenarios.",
+      "The project is currently on hold; this case study describes the work completed, not an active service.",
+    ],
   },
   {
     number: "02",
@@ -30,6 +33,11 @@ export const projects = [
     contribution:
       "Mapped paid, cancelled and offline checkout states; simplified cashier access; tested the design against day-to-day kiosk work. Expense and settlement features are still being built.",
     stack: ["React", "Fastify", "PostgreSQL", "Prisma"],
+    details: [
+      "Designed QR-only ordering for a real kiosk and removed unnecessary cashier PIN and cash-drawer steps.",
+      "Worked through paid and cancelled states, offline checkout, discount thresholds and data consistency.",
+      "Expense, settlement, cashflow and period-closure features remain unfinished.",
+    ],
   },
   {
     number: "03",
@@ -43,6 +51,11 @@ export const projects = [
     stack: ["Next.js", "Supabase", "DeepSeek API", "Vitest", "Playwright"],
     link: "https://tourism-geography-tutor.vercel.app",
     linkLabel: "Explore preview",
+    details: [
+      "Linked structured learning content to cited pages in the source material.",
+      "Shaped learner and lecturer journeys, assessments, approval controls and a DeepSeek-backed question flow.",
+      "Reviewed draft course questions and checked core paths with automated tests and build verification.",
+    ],
   },
   {
     number: "04",
@@ -56,6 +69,11 @@ export const projects = [
     stack: ["HTML", "CSS", "JavaScript", "Content architecture"],
     link: "https://pmni-website-aztechdigital.vercel.app",
     linkLabel: "View website",
+    details: [
+      "Organised a 20-page institutional source profile into eight clear website pages.",
+      "Audited content against the source and checked 264 navigation links.",
+      "Prepared the information structure for a future WordPress migration; the current site is static.",
+    ],
   },
   {
     number: "05",
@@ -69,6 +87,11 @@ export const projects = [
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     link: "https://strapz.vercel.app",
     linkLabel: "Visit storefront",
+    details: [
+      "Worked on catalogue, product variants and cart flows for a responsive storefront.",
+      "Supported DuitNow QR checkout and manual WhatsApp fulfilment.",
+      "The current storefront does not include an integrated payment gateway or transaction backend.",
+    ],
   },
   {
     number: "06",
@@ -82,6 +105,11 @@ export const projects = [
     stack: ["Docker", "Docker Compose", "AWS EC2", "Ubuntu", "Nginx"],
     link: "https://github.com/hariz2001-del/devops-cloud-portfolio",
     linkLabel: "View repository",
+    details: [
+      "Containerised an Express API with a Node 20 Alpine Dockerfile.",
+      "Configured MySQL, PostgreSQL and MongoDB Compose services with env values, port mapping and volumes.",
+      "Practised an Ubuntu EC2 test deployment using SSH, Security Groups, Elastic IP, Nginx, HTTPS and Cloudflare DNS.",
+    ],
   },
   {
     number: "07",
@@ -95,6 +123,11 @@ export const projects = [
     stack: ["HTML", "CSS", "Vercel", "Cloudflare DNS"],
     link: "https://sarangburunghantu.my",
     linkLabel: "Visit website",
+    details: [
+      "Built and deployed the business website with AI-assisted HTML/CSS and a custom domain.",
+      "Co-run kiosk operations, including bites products, restocking, customer-facing work and staff SOPs.",
+      "Use those operating observations to validate Vista’s POS and management requirements.",
+    ],
   },
 ];
 

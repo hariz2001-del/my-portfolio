@@ -1,6 +1,6 @@
 # Hariz Helmi — portfolio
 
-React + Vite portfolio for product, systems and cloud/DevOps-adjacent opportunities. The content focuses on documented work and distinguishes live products, previews, in-progress projects and course practice.
+React + Vite online CV and portfolio. It combines the one-page resume with detailed project evidence: work history, education, technical practice, transferable skills and current project status.
 
 ## Local development
 
@@ -22,4 +22,4 @@ Cloudflare Pages serves the React Router routes as an SPA when there is no top-l
 
 ## Updating portfolio content
 
-Project and skill copy lives in [`src/data/portfolio.js`](src/data/portfolio.js). Keep each status and contribution current before publishing. In particular, do not present planned WordPress work, unfinished Vista features or course-level DevOps exercises as completed production experience.
+Project and skill copy lives in [`src/data/portfolio.js`](src/data/portfolio.js); the fuller CV is in [`src/pages/About.jsx`](src/pages/About.jsx). Keep each status and contribution current before publishing. Aztech Calli is on hold and intentionally has no live link. Do not present planned WordPress work, unfinished Vista features or course-level DevOps exercises as completed production experience.

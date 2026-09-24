@@ -25,6 +25,13 @@ function ProjectCard({ project, detailed = false }) {
         {detailed && (
           <p className="project-contribution">{project.contribution}</p>
         )}
+        {detailed && project.details && (
+          <ul className="project-detail-list">
+            {project.details.map((detail) => (
+              <li key={detail}>{detail}</li>
+            ))}
+          </ul>
+        )}
         <div className="project-tags">
           {project.stack.slice(0, detailed ? undefined : 3).map((item) => (
             <span key={item}>{item}</span>
@@ -41,7 +48,9 @@ function ProjectCard({ project, detailed = false }) {
           </a>
         ) : (
           <span className="project-link muted-link">
-            Private working project
+            {project.status === "On hold"
+              ? "Project on hold · no live link"
+              : "Internal working project · no public link"}
           </span>
         )}
       </div>

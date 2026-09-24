@@ -11,9 +11,9 @@ function Contact() {
           <em>something useful.</em>
         </h1>
         <p>
-          I’m exploring product operations, systems analysis, technical
-          implementation and junior cloud/DevOps opportunities. If that sounds
-          relevant, I’d be glad to talk.
+          If my experience fits a position on your team, I’d be glad to discuss
+          the work, walk through a project or share a concise resume alongside
+          this detailed CV.
         </p>
       </section>
       <section className="wrap contact-layout" aria-label="Contact methods">
