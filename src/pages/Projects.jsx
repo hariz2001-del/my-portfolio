@@ -12,8 +12,8 @@ function Projects() {
           <em>My part in it.</em>
         </h1>
         <p>
-          The problem, my contribution, features, stack, status and where AI
-          assisted each build. Aztech Calli is on hold, so its live link has
+          The problem, my contribution, features, stack, status and AI
+          involvement where relevant. Aztech Calli is on hold, so its live link has
           been removed; Vista remains an internal pilot.
         </p>
       </section>

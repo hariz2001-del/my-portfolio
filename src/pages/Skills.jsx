@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { identity } from "../data/portfolio";
 
 const groups = [
   {
     title: "Business & F&B operations",
-    basis: "Direct operating experience · Sarang",
+    basis: "Co-owner experience · Sarang",
     intro: "I work with the real constraints of a kiosk, not only a product brief.",
     items: ["Customer service and issue handling", "Bites products, purchasing and restocking", "Sales and cost decisions", "Part-time staff training and SOPs", "TikTok Live customer engagement", "Partner expense allocation and accountability"],
   },
@@ -30,7 +29,7 @@ const groups = [
     title: "Engineering & transferable practice",
     basis: "Professional civil-engineering experience",
     intro: "Formal analysis, documentation and coordination shaped how I approach digital work.",
-    items: ["Structural analysis and design", "STAAD.Pro, OpenTower and AutoCAD", "Technical drawings and documentation", "Authority submissions and coordination", "Constraint analysis and issue follow-up", "Clear technical handoffs"],
+    items: ["Structural analysis and design", "STAAD.Pro, OpenTower and AutoCAD", "RC, steel and foundation design support", "Technical drawings and documentation", "Client and site-stakeholder coordination", "Authority-submission support", "Constraint analysis and issue follow-up", "Clear technical handoffs"],
   },
   {
     title: "CMS & architecture exposure",
@@ -69,7 +68,6 @@ function Skills() {
           <p>Sarang is the business context; Vista, Calli and the other case studies show how I translate that context into product decisions and delivery.</p>
         </div>
         <div className="skills-context-actions">
-          <a className="button button-dark" href={identity.sarang} target="_blank" rel="noopener noreferrer">Visit Sarang <span aria-hidden="true">↗</span></a>
           <Link className="text-link" to="/projects">Explore case studies <span aria-hidden="true">↗</span></Link>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { identity, projects, skillGroups } from "../data/portfolio";
+import { projects, skillGroups } from "../data/portfolio";
 import ProjectCard from "../components/ProjectCard";
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
           </h1>
           <p className="hero-description">
             I bring operating judgment, engineering discipline and technical
-            curiosity to useful digital work. I co-run an F&B business, shape
+            curiosity to useful digital work. I co-own an F&B business, shape
             products around real workflows, and study cloud and DevOps while
             delivering AI-assisted web projects.
           </p>
@@ -94,11 +94,11 @@ function Home() {
           </div>
           <div>
             <strong>2026</strong>
-            <span>Co-operator, Sarang F&B kiosk</span>
+            <span>Co-owner, Sarang F&B kiosk</span>
           </div>
           <div>
-            <strong>08</strong>
-            <span>Documented product, website & cloud projects</span>
+            <strong>09</strong>
+            <span>Documented engineering, product & cloud case studies</span>
           </div>
           <div>
             <strong>05</strong>
@@ -135,17 +135,16 @@ function Home() {
             <span>2026 — PRESENT</span>
             <h3>Business operations</h3>
             <p>
-              Co-run Sarang’s kiosk, train five staff and turn live F&B
-              scenarios into requirements for internal tools. See the{" "}
-              <a className="inline-link" href={identity.sarang} target="_blank" rel="noopener noreferrer">Sarang website ↗</a>.
+              Co-own Sarang’s kiosk, train five staff and turn live F&B
+              scenarios into requirements for internal tools.
             </p>
           </article>
           <article>
             <span>2025 — 2026</span>
             <h3>Structural engineering</h3>
             <p>
-              Prepared analyses and drawings, managed technical follow-up and
-              learned to document decisions under project constraints.
+              Worked on structural analysis and drawings, coordinated technical
+              follow-up, and supported client, site and authority-facing work.
             </p>
           </article>
           <article>
@@ -166,13 +165,13 @@ function Home() {
             <h2 id="work-title">
               Work with a reason
               <br />
-              <em>behind the build.</em>
+              <em>behind the decisions.</em>
             </h2>
           </div>
           <div className="section-intro-side">
             <p>
-              Not just a list of frameworks. Each project started with a user,
-              an operating constraint, or a messy problem worth clarifying.
+              Not just a list of frameworks. The work starts with a user,
+              a technical constraint, or a problem worth clarifying.
             </p>
             <Link className="text-link" to="/projects">
               All projects <span aria-hidden="true">↗</span>
@@ -180,9 +179,8 @@ function Home() {
           </div>
         </div>
         <div className="featured-grid">
-          {projects
-            .filter((project) => project.status !== "On hold")
-            .slice(0, 3)
+          {["Vista", "Telco & structural design work", "Tourism Geography Tutor"]
+            .map((name) => projects.find((project) => project.name === name))
             .map((project) => (
               <ProjectCard key={project.number} project={project} />
             ))}

@@ -36,7 +36,7 @@ export const projects = [
     type: "Internal POS & restaurant management",
     status: "Internal pilot",
     theme: "vista",
-    lead: "A QR-first ordering system for the kiosk I help operate.",
+    lead: "A QR-first ordering system for the kiosk I co-own.",
     problem: "The counter needed resilient cashless sales while owners needed a clear view of money movement and partner settlement.",
     contribution:
       "Mapped paid, cancelled and offline checkout states; simplified cashier access; tested the design against day-to-day kiosk work. Reviewed owner cashflow and settlement rules against the real business.",
@@ -134,19 +134,18 @@ export const projects = [
   {
     number: "07",
     name: "Sarang",
-    type: "Business website & operations",
+    type: "Co-owned business & website",
     status: "Live website",
     theme: "sarang",
-    lead: "A digital front door for the F&B business I help run.",
+    lead: "A digital front door for the F&B business I co-own.",
     problem: "The kiosk needed an online presence and consistent routines behind the counter.",
     contribution:
-      "Built and deployed the website with AI-assisted HTML/CSS, configured the custom domain, and brought the same operating knowledge into staff SOPs, inventory and Vista requirements.",
+      "I co-own the kiosk and contribute to products, staff routines, customer service and cost decisions. I built and deployed its website with AI-assisted HTML/CSS and used operating knowledge to shape Vista requirements.",
     stack: ["HTML", "CSS", "Vercel", "Cloudflare DNS"],
-    link: "https://sarangburunghantu.my",
-    linkLabel: "Visit Sarang website",
+    hideLink: true,
     details: [
       "Built and deployed the business website with AI-assisted HTML/CSS and a custom domain.",
-      "Co-run kiosk operations, including bites products, restocking, customer-facing work and staff SOPs.",
+      "Co-own and run kiosk operations, including bites products, restocking, customer-facing work and staff SOPs.",
       "Use those operating observations to validate Vista’s POS and management requirements.",
     ],
     aiNote: "AI-assisted HTML/CSS website build; the business operations and product decisions are my direct work.",
@@ -170,13 +169,38 @@ export const projects = [
     ],
     aiNote: "AI-assisted code and design implementation; I directed the content and reviewed the published claims.",
   },
+  {
+    number: "09",
+    name: "Telco & structural design work",
+    artMark: "STRUCTURE",
+    type: "Professional civil engineering",
+    status: "Professional work",
+    theme: "engineering",
+    lead: "Structural analysis, drawings and coordination across telecommunications and building-design work.",
+    problem: "Design work had to satisfy technical constraints while remaining clear enough for review, approvals and implementation.",
+    contribution: "At Oversea Deco I analysed telco structures and prepared technical drawings; at Perunding ZAB I supported RC, steel and foundation design, authority submissions and stakeholder follow-up.",
+    stack: ["STAAD.Pro", "OpenTower", "AutoCAD", "Structural analysis", "Technical drawings"],
+    details: [
+      "Analysed telecommunications poles and high-mast structures, working through design comments and site constraints.",
+      "Supported reinforced-concrete, steel and foundation design, calculations and drawings.",
+      "Assisted authority submissions and coordinated technical queries with clients, architects, authorities and site stakeholders.",
+      "Documented revisions and clarified technical handoffs across disciplines.",
+    ],
+    hideLink: true,
+    aiNote: "Professional engineering experience, not an AI-assisted software build; specific client deliverables are not published here.",
+  },
 ];
 
 export const skillGroups = [
   {
     label: "Business & operations",
-    text: "Direct work running an F&B kiosk: customer service, staff routines, replenishment, sales and practical cost decisions.",
+    text: "Co-owner experience running an F&B kiosk: customer service, staff routines, replenishment, sales and practical cost decisions.",
     tags: ["F&B operations", "Staff SOPs", "Restocking", "Customer service", "Sales & costs"],
+  },
+  {
+    label: "Structural engineering",
+    text: "Professional design and coordination work across telco structures, reinforced concrete, steel and foundations.",
+    tags: ["STAAD.Pro / OpenTower", "AutoCAD", "Authority submissions", "Technical coordination"],
   },
   {
     label: "Systems & product",
@@ -187,6 +211,11 @@ export const skillGroups = [
       "Acceptance criteria",
       "F&B operations",
     ],
+  },
+  {
+    label: "Stakeholder delivery",
+    text: "Client and site coordination, design comments, authority-facing documentation and clear handoffs across disciplines.",
+    tags: ["Client liaison", "Design queries", "Documentation", "Review follow-up"],
   },
   {
     label: "Digital delivery",

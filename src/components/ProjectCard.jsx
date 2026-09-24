@@ -2,11 +2,11 @@ function ProjectCard({ project, detailed = false }) {
   return (
     <article className={`project-card project-${project.theme}`}>
       <div className="project-art" aria-hidden="true">
-        <span className="project-art-index">{project.number} / 08</span>
+        <span className="project-art-index">{project.number} / 09</span>
         <span className="project-art-mark">
-          {project.name === "Cloud & DevOps practice"
+          {project.artMark || (project.name === "Cloud & DevOps practice"
             ? "DEV/OPS"
-            : project.name}
+            : project.name)}
         </span>
         <span className="project-art-orbit orbit-one" />
         <span className="project-art-orbit orbit-two" />
@@ -30,20 +30,20 @@ function ProjectCard({ project, detailed = false }) {
         )}
         {detailed && project.details && (
           <div className="project-feature-block">
-            <strong>Features & delivery</strong>
+            <strong>{project.theme === "engineering" ? "Scope & delivery" : "Features & delivery"}</strong>
             <ul className="project-detail-list">
               {project.details.map((detail) => <li key={detail}>{detail}</li>)}
             </ul>
           </div>
         )}
-        {detailed && project.aiNote && <p className="project-ai-note"><strong>Build context</strong>{project.aiNote}</p>}
+        {detailed && project.aiNote && <p className="project-ai-note"><strong>{project.theme === "engineering" ? "Work context" : "Build context"}</strong>{project.aiNote}</p>}
         {detailed && <span className="project-stack-label">STACK / TOOLS</span>}
         <div className="project-tags">
           {project.stack.slice(0, detailed ? undefined : 3).map((item) => (
             <span key={item}>{item}</span>
           ))}
         </div>
-        {project.link ? (
+        {project.hideLink ? null : project.link ? (
           <a
             className="project-link"
             href={project.link}

@@ -4,10 +4,10 @@ import { identity } from "../data/portfolio";
 const experience = [
   {
     period: "APR 2026 — PRESENT",
-    role: "Co-operator, Operations & Digital Product Contributor",
+    role: "Co-owner, Operations & Digital Product Contributor",
     place: "Sarang · UKM Bangi",
     points: [
-      "Co-run an F&B kiosk, managing bites products, purchasing and restocking, customer service, and day-to-day sales and cost decisions.",
+      "Co-own and operate an F&B kiosk, managing bites products, purchasing and restocking, customer service, and day-to-day sales and cost decisions.",
       "Train five part-time staff on SOPs and support customer engagement as a TikTok Live host.",
       "Translate real ordering, payment, shift and expense-split scenarios into requirements and test cases for Vista.",
       "Balance partner accountability with simple counter routines: focus on useful reporting and avoid unnecessary cashier steps.",
@@ -18,9 +18,9 @@ const experience = [
     role: "Telco Pole & Structural Design Engineer",
     place: "Oversea Deco & Industrial Sdn Bhd",
     points: [
-      "Prepared structural analyses and technical drawings using STAAD.Pro/OpenTower and AutoCAD.",
-      "Coordinated design follow-up, checked project constraints and documented technical decisions for implementation.",
-      "Developed a disciplined approach to requirements, trade-offs and clear handoffs across stakeholders.",
+      "Analysed telecommunications poles and high-mast structures using STAAD.Pro/OpenTower and prepared AutoCAD technical drawings.",
+      "Followed up design issues and site constraints with technical stakeholders; documented changes and clarified drawings for implementation.",
+      "Balanced structural requirements, constructability and practical design trade-offs while keeping technical handoffs clear.",
     ],
   },
   {
@@ -28,13 +28,24 @@ const experience = [
     role: "Junior Engineer",
     place: "Perunding ZAB Sdn Bhd",
     points: [
-      "Supported reinforced-concrete, steel and foundation design work and related technical documentation.",
-      "Assisted with authority submissions, issue follow-up and coordination with project stakeholders.",
+      "Supported reinforced-concrete, steel and foundation design work, technical calculations and drawings.",
+      "Assisted authority submissions and coordinated design queries with clients, architects, authorities and site stakeholders.",
+      "Tracked technical comments and revisions through formal submission and delivery processes.",
     ],
   },
 ];
 
 const capabilities = [
+  {
+    title: "Structural engineering & coordination",
+    context: "Professional civil-engineering work",
+    items: [
+      "Structural analysis and technical drawings",
+      "Client and site-stakeholder coordination",
+      "Authority-submission support",
+      "Design queries, revisions and handoffs",
+    ],
+  },
   {
     title: "Systems & business analysis",
     context: "Directly applied in product and F&B work",
@@ -136,7 +147,7 @@ function About() {
         </div>
         <div className="cv-summary-copy">
           <p>
-            I am a civil engineering graduate and F&B co-operator who turns
+            I am a civil engineering graduate and F&B co-owner who turns
             day-to-day operating problems into clear requirements, business
             rules and testable workflows. I use AI-assisted development to help
             deliver web products, then review the result against real use cases
@@ -144,7 +155,7 @@ function About() {
           </p>
           <p>
             My strongest evidence is in systems thinking, product decisions,
-            operational judgment and dependable follow-through. I am also
+            operational judgment, engineering analysis and coordination. I am also
             studying Cloud & DevOps Engineering, with hands-on practice in
             Docker, Linux, AWS EC2 and web deployment.
           </p>
@@ -193,7 +204,7 @@ function About() {
                       <li key={point}>{point}</li>
                     ))}
                   </ul>
-                  {item.place.startsWith("Sarang") && <a className="text-link sarang-inline-link" href={identity.sarang} target="_blank" rel="noopener noreferrer">Visit the Sarang website <span aria-hidden="true">↗</span></a>}
+                  {item.place.startsWith("Sarang") && <p className="experience-url">Website: <a href={identity.sarang} target="_blank" rel="noopener noreferrer">sarangburunghantu.my</a></p>}
                 </div>
               </article>
             ))}
@@ -207,20 +218,43 @@ function About() {
             <p className="eyebrow">03 / BUSINESS IN PRACTICE</p>
             <h2 id="business-depth-title">Business decisions<br /><em>behind the software.</em></h2>
           </div>
-          <p className="section-intro-side">Sarang is not just a case study. It is the working business that gives my product choices a reality check.</p>
+          <p className="section-intro-side">Sarang is a business I co-own, not just a case study. Its day-to-day work gives my product choices a reality check.</p>
         </div>
         <div className="cv-depth-grid">
           <article><span>01 / RUN THE OPERATION</span><h3>People, product, customers</h3><p>I handle bites products, replenishment, customer-facing service and staff routines. Training five part-time staff means writing processes they can actually follow during a shift.</p></article>
           <article><span>02 / UNDERSTAND THE MONEY</span><h3>Costs and accountability</h3><p>Sales, direct costs, shared expenses and partner allocations need different treatment. I work through those distinctions with the people affected before turning them into system rules.</p></article>
           <article><span>03 / CHOOSE THE RIGHT SCOPE</span><h3>Keep the counter simple</h3><p>For Vista, I favoured QR-first operations and removed unnecessary cashier PIN and cash-drawer steps. Owner visibility matters, but extra screens must earn their place.</p></article>
         </div>
-        <a className="button button-dark cv-business-link" href={identity.sarang} target="_blank" rel="noopener noreferrer">Explore Sarang website <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section className="cv-engineering-section" aria-labelledby="engineering-depth-title">
+        <div className="wrap">
+          <div className="section-intro">
+            <div><p className="eyebrow">04 / CIVIL ENGINEERING</p><h2 id="engineering-depth-title">Technical work.<br /><em>Transferable discipline.</em></h2></div>
+            <p className="section-intro-side">Two engineering roles gave me a foundation in analysis, controlled documentation, client and site coordination, and navigating formal approval processes.</p>
+          </div>
+          <div className="engineering-detail-grid">
+            <article>
+              <span className="engineering-kicker">OVERSEA DECO & INDUSTRIAL · 2025–2026</span>
+              <h3>Telco pole & structural design</h3>
+              <p>Analysed telecommunications structures with STAAD.Pro and OpenTower, prepared AutoCAD drawings and worked through design comments, site constraints and implementation follow-up.</p>
+              <ul><li>Structural modelling and load-path thinking</li><li>Technical drawings and revision control</li><li>Design clarification with project stakeholders</li></ul>
+            </article>
+            <article>
+              <span className="engineering-kicker">PERUNDING ZAB · 2025</span>
+              <h3>Building and infrastructure design support</h3>
+              <p>Supported reinforced-concrete, steel and foundation design and associated documentation. Assisted with authority submissions and coordinated design queries among clients, architects, authorities and site teams.</p>
+              <ul><li>Interpreting requirements and constraints</li><li>Submission and technical-approval follow-up</li><li>Client-facing and multidisciplinary coordination</li></ul>
+            </article>
+          </div>
+          <div className="engineering-transfer"><strong>What transfers into tech work</strong><p>Decompose complex problems, record assumptions, respond to review comments, align multiple stakeholders, and carry a decision through to a clear handoff.</p></div>
+        </div>
       </section>
 
       <section className="cv-devops-section" aria-labelledby="devops-depth-title">
         <div className="wrap">
           <div className="section-intro">
-            <div><p className="eyebrow">04 / CLOUD & DEVOPS PRACTICE</p><h2 id="devops-depth-title">From local build<br /><em>to reachable service.</em></h2></div>
+            <div><p className="eyebrow">05 / CLOUD & DEVOPS PRACTICE</p><h2 id="devops-depth-title">From local build<br /><em>to reachable service.</em></h2></div>
             <p className="section-intro-side">Course-guided practical work and test deployments, with the boundaries of that experience stated clearly.</p>
           </div>
           <div className="cv-depth-grid">
@@ -235,7 +269,7 @@ function About() {
       <section className="section wrap" aria-labelledby="cv-skills-title">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">05 / SKILLS & TOOLS</p>
+            <p className="eyebrow">06 / SKILLS & TOOLS</p>
             <h2 id="cv-skills-title">
               What I can
               <br />
@@ -279,7 +313,7 @@ function About() {
       >
         <div className="wrap cv-education-layout">
           <div>
-            <p className="eyebrow">06 / EDUCATION & DEVELOPMENT</p>
+            <p className="eyebrow">07 / EDUCATION & DEVELOPMENT</p>
             <h2 id="education-title">
               Formal training.
               <br />
@@ -301,11 +335,11 @@ function About() {
 
       <section className="wrap cv-endnote">
         <div>
-          <p className="eyebrow">07 / PROJECT EVIDENCE</p>
+          <p className="eyebrow">08 / PROJECT EVIDENCE</p>
           <h2>See the decisions in context.</h2>
           <p>
             The project case studies show my part in each build, its technical
-            stack, and whether it is live, a preview, in development or on hold.
+            stack, and whether it is live, an internal pilot, professional work or on hold.
           </p>
         </div>
         <Link className="button button-dark" to="/projects">
