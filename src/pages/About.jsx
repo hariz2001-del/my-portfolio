@@ -1,157 +1,137 @@
-import './About.css'
+import { Link } from "react-router-dom";
+
+const experience = [
+  {
+    period: "APR 2026 — PRESENT",
+    role: "Co-operator · Operations & Digital Product",
+    place: "Sarang, UKM Bangi",
+    detail:
+      "Run part of a live F&B kiosk: product and supply decisions, customer service and SOP training for five part-time staff. That direct operating experience shapes the requirements for Vista and other F&B software.",
+  },
+  {
+    period: "OCT 2025 — MAY 2026",
+    role: "Telco Pole & Structural Design Engineer",
+    place: "Oversea Deco & Industrial Sdn Bhd",
+    detail:
+      "Prepared structural analyses and technical drawings, followed up design questions and balanced requirements with practical project constraints.",
+  },
+  {
+    period: "APR — OCT 2025",
+    role: "Junior Engineer",
+    place: "Perunding ZAB Sdn Bhd",
+    detail:
+      "Supported reinforced-concrete, steel and foundation work, authority submissions and coordination with project stakeholders.",
+  },
+];
 
 function About() {
-  const experience = [
-    {
-      id: 1,
-      period: '2023 - Present',
-      position: 'Senior DevOps Engineer',
-      company: 'Tech Company Inc.',
-      description:
-        'Leading DevOps initiatives, managing cloud infrastructure, and mentoring junior engineers.',
-    },
-    {
-      id: 2,
-      period: '2021 - 2023',
-      position: 'DevOps Engineer',
-      company: 'Cloud Solutions Ltd.',
-      description:
-        'Developed CI/CD pipelines and managed Kubernetes clusters for microservices deployments.',
-    },
-    {
-      id: 3,
-      period: '2019 - 2021',
-      position: 'Systems Administrator',
-      company: 'Infrastructure Ops',
-      description:
-        'Managed on-premise and cloud infrastructure, implemented automation with Ansible and scripting.',
-    },
-  ]
-
   return (
-    <div>
-      {/* About Header */}
-      <section className="hero">
-        <div className="container">
-          <h2 className="hero-title">About Me</h2>
-          <p className="hero-subtitle">DevOps Engineer | Cloud Architect | Automation Specialist</p>
-        </div>
+    <>
+      <section className="page-hero wrap">
+        <p className="eyebrow">ABOUT / HARIZ HELMI</p>
+        <h1>
+          Curiosity with
+          <br />
+          <em>an operator’s eye.</em>
+        </h1>
+        <p>
+          I’m a civil engineering graduate and F&B co-operator moving into
+          technical product and cloud work. My through-line is making
+          complicated systems understandable, testable and useful.
+        </p>
       </section>
-
-      {/* About Content */}
-      <section className="about">
-        <div className="container">
-          <div className="about-content">
-            <div className="about-text">
-              <h3>Background</h3>
-              <p>
-                I'm a passionate DevOps Engineer with 5+ years of experience in cloud
-                infrastructure, containerization, and CI/CD pipeline automation. My journey
-                started as a Systems Administrator, gradually evolving into a full-fledged
-                DevOps professional.
-              </p>
-
-              <h3>What I Do</h3>
-              <p>
-                I specialize in designing and maintaining scalable systems that enable teams
-                to deploy faster and more reliably. My expertise spans across multiple cloud
-                platforms, container orchestration, and modern DevOps tools.
-              </p>
-
-              <h3>My Focus Areas</h3>
-              <ul className="focus-list">
-                <li>Infrastructure automation and provisioning</li>
-                <li>Containerization and orchestration</li>
-                <li>CI/CD pipeline design and implementation</li>
-                <li>Cloud infrastructure optimization</li>
-                <li>Monitoring, logging, and observability</li>
-                <li>Disaster recovery and high availability</li>
-              </ul>
-            </div>
-
-            <div className="about-sidebar">
-              <div className="stats-grid">
-                <div className="stat-card">
-                  <h4>5+</h4>
-                  <p>Years in DevOps</p>
-                </div>
-                <div className="stat-card">
-                  <h4>20+</h4>
-                  <p>Projects Delivered</p>
-                </div>
-                <div className="stat-card">
-                  <h4>99.9%</h4>
-                  <p>Uptime SLA</p>
-                </div>
-                <div className="stat-card">
-                  <h4>8+</h4>
-                  <p>Cloud Platforms</p>
-                </div>
-              </div>
-
-              <div className="tech-summary">
-                <h3>Technology Stack</h3>
-                <div className="tech-tags">
-                  <span>Kubernetes</span>
-                  <span>Docker</span>
-                  <span>AWS</span>
-                  <span>Terraform</span>
-                  <span>Jenkins</span>
-                  <span>GitLab CI</span>
-                  <span>Prometheus</span>
-                  <span>Grafana</span>
-                </div>
-              </div>
-            </div>
+      <section className="about-story section wrap">
+        <div>
+          <p className="eyebrow">01 / THE BRIDGE</p>
+          <h2>Where technical thinking meets daily reality.</h2>
+        </div>
+        <div className="story-copy">
+          <p>
+            At Sarang, I see the little exceptions a product brief can miss: a
+            cancelled order after payment, a shared expense, a cashier working
+            through a busy shift. In engineering, I learned to document
+            assumptions, check constraints and coordinate decisions that affect
+            other people.
+          </p>
+          <p>
+            Now I bring both perspectives into AI-assisted product delivery. I
+            like mapping the workflow, making the business rules explicit,
+            checking what the implementation actually does and staying involved
+            through deployment.
+          </p>
+          <div className="story-pill-row">
+            <span>Requirements</span>
+            <span>Operational judgment</span>
+            <span>Quality checks</span>
+            <span>Technical follow-through</span>
           </div>
         </div>
       </section>
-
-      {/* Experience Section */}
-      <section className="experience">
-        <div className="container">
-          <h2 className="section-title">Experience</h2>
-          <div className="experience-timeline">
-            {experience.map((item, index) => (
-              <div key={item.id} className={`experience-item ${index % 2 === 0 ? 'left' : 'right'}`}>
-                <div className="experience-date">{item.period}</div>
-                <div className="experience-content">
-                  <h3>{item.position}</h3>
-                  <p className="experience-company">{item.company}</p>
-                  <p>{item.description}</p>
+      <section className="timeline-section">
+        <div className="wrap">
+          <div className="section-intro">
+            <div>
+              <p className="eyebrow">02 / EXPERIENCE</p>
+              <h2>
+                Different settings.
+                <br />
+                <em>Transferable discipline.</em>
+              </h2>
+            </div>
+          </div>
+          <div className="timeline">
+            {experience.map((item) => (
+              <article className="timeline-item" key={item.role}>
+                <span className="timeline-period">{item.period}</span>
+                <div>
+                  <h3>{item.role}</h3>
+                  <p className="timeline-place">{item.place}</p>
+                  <p>{item.detail}</p>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Certifications Section */}
-      <section className="certifications">
-        <div className="container">
-          <h2 className="section-title">Certifications & Achievements</h2>
-          <div className="certifications-grid">
-            <div className="cert-card">
-              <h3>Kubernetes Administrator (CKA)</h3>
-              <p>Linux Foundation | 2023</p>
-            </div>
-            <div className="cert-card">
-              <h3>AWS Solutions Architect</h3>
-              <p>Amazon Web Services | 2022</p>
-            </div>
-            <div className="cert-card">
-              <h3>HashiCorp Certified: Terraform Associate</h3>
-              <p>HashiCorp | 2022</p>
-            </div>
-            <div className="cert-card">
-              <h3>Docker Certified Associate</h3>
-              <p>Docker | 2021</p>
-            </div>
-          </div>
+      <section className="section wrap education-section">
+        <div>
+          <p className="eyebrow">03 / EDUCATION & PRACTICE</p>
+          <h2>Learning in layers.</h2>
+        </div>
+        <div className="education-list">
+          <article>
+            <span>2026 · IN PROGRESS</span>
+            <h3>Cloud & DevOps Engineering</h3>
+            <p>
+              Lejiend Education · Docker, Compose, Linux, EC2, networking and
+              deployment practice; CI/CD coursework. Kubernetes is scheduled as
+              an upcoming module.
+            </p>
+          </article>
+          <article>
+            <span>2020 — 2025</span>
+            <h3>B.Eng. (Hons), Civil Engineering</h3>
+            <p>
+              Universiti Kebangsaan Malaysia · Structural problem-solving,
+              technical documentation and a thesis comparing FEM and LEM
+              slope-stability modelling.
+            </p>
+          </article>
+          <article>
+            <span>2026</span>
+            <h3>Python for Everyone</h3>
+            <p>KSWAMY Global Academy · Introductory Python certificate.</p>
+          </article>
         </div>
       </section>
-    </div>
-  )
+      <section className="about-bottom wrap">
+        <p>Interested in the work behind the work?</p>
+        <Link className="button button-dark" to="/projects">
+          See the projects <span aria-hidden="true">↗</span>
+        </Link>
+      </section>
+    </>
+  );
 }
 
-export default About
+export default About;
