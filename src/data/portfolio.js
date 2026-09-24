@@ -158,7 +158,7 @@ export const projects = [
     type: "Professional portfolio & CV",
     status: "Live website",
     theme: "portfolio",
-    lead: "An evidence-led record of my business, engineering and technical work.",
+    lead: "An evidence-led record of web products, technical practice and the experience behind them.",
     problem: "A one-page resume cannot show the reasoning, project boundaries and range behind each headline skill.",
     contribution: "I selected the work, clarified my contribution and directed the content and design iteration.",
     stack: ["React", "Vite", "React Router", "CSS", "GitHub", "Cloudflare Pages"],
@@ -196,49 +196,33 @@ export const projects = [
 
 export const skillGroups = [
   {
-    label: "Business & operations",
-    text: "Co-owner decisions across products, people, customers, purchasing, costs and partner accountability at Sarang.",
-    tags: ["Business ownership", "Staff SOPs", "Purchasing", "Customer service", "Sales & costs"],
+    label: "Web applications",
+    text: "AI-assisted frontend and API-backed products, with direct work on requirements, reviews and release checks.",
+    tags: ["React / Next.js", "TypeScript", "REST APIs", "Responsive UI"],
   },
   {
-    label: "Structural engineering",
-    text: "Professional design and coordination work across telco structures, reinforced concrete, steel and foundations.",
-    tags: ["STAAD.Pro / OpenTower", "AutoCAD", "Authority submissions", "Technical coordination"],
-  },
-  {
-    label: "Systems & product",
-    text: "Requirements, workflows, user roles, business rules, stakeholder communication and operational trade-offs.",
-    tags: [
-      "Process mapping",
-      "Data reconciliation",
-      "Acceptance criteria",
-      "F&B operations",
-    ],
-  },
-  {
-    label: "Stakeholder delivery",
-    text: "Client and site coordination, design comments, authority-facing documentation and clear handoffs across disciplines.",
-    tags: ["Client liaison", "Design queries", "Documentation", "Review follow-up"],
-  },
-  {
-    label: "Digital delivery",
-    text: "AI-assisted web implementation, code review, API integration, testing, troubleshooting and release checks.",
-    tags: [
-      "React / Next.js",
-      "TypeScript",
-      "PostgreSQL / Supabase",
-      "Vitest / Playwright",
-    ],
+    label: "Data & product systems",
+    text: "User roles, business rules, data states and reconciliation across POS, learning and content projects.",
+    tags: ["PostgreSQL / Supabase", "Prisma", "Process mapping", "Acceptance criteria"],
   },
   {
     label: "Cloud & DevOps practice",
-    text: "Hands-on labs across containers, Linux, EC2, DNS and web deployment, plus guided CI/CD and architecture work.",
-    tags: [
-      "Docker / Compose",
-      "AWS EC2",
-      "Ubuntu / SSH",
-      "Nginx / DNS / HTTPS",
-      "GitHub Actions",
-    ],
+    text: "Hands-on labs across containers, Linux, EC2, DNS and web deployment, plus guided CI/CD work.",
+    tags: ["Docker / Compose", "AWS EC2", "Ubuntu / SSH", "Nginx / HTTPS", "GitHub Actions"],
+  },
+  {
+    label: "Testing & delivery",
+    text: "Review AI-assisted implementations, test scenarios, investigate failures and verify what is deployed.",
+    tags: ["Vitest / Playwright", "Edge cases", "Build checks", "Troubleshooting"],
+  },
+  {
+    label: "Business context",
+    text: "Co-owner experience helps me define practical workflows and evaluate whether a product fits real operations.",
+    tags: ["Requirements", "Staff workflows", "Customer feedback", "Cost rules"],
+  },
+  {
+    label: "Engineering discipline",
+    text: "Structural design work strengthened analysis, documentation, stakeholder coordination and technical handoffs.",
+    tags: ["Analysis", "Technical drawings", "Coordination", "Review follow-up"],
   },
 ];

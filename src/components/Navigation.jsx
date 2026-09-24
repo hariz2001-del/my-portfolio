@@ -29,7 +29,7 @@ function Navigation() {
             H<span>.</span>
           </span>
           <span className="brand-name">
-            HARIZ HELMI<small>BUSINESS / ENGINEERING / TECH</small>
+            HARIZ HELMI<small>WEB / SYSTEMS / CLOUD</small>
           </span>
         </Link>
         <button

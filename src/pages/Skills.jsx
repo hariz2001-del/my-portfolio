@@ -2,30 +2,6 @@ import { Link } from "react-router-dom";
 
 const groups = [
   {
-    title: "Business ownership & operations",
-    basis: "Direct work · Sarang co-owner",
-    intro: "Day-to-day decisions in a live F&B business give me practical commercial and customer context.",
-    items: ["Bites products and menu decisions", "Purchasing, stock checks and restocking", "Supplier and replenishment follow-up", "Sales and cost visibility", "Direct versus shared expense classification", "Partner expense allocation and reimbursement rules", "Customer service and issue resolution", "Training five part-time staff on SOPs", "Shift routines and operational accountability", "TikTok Live promotion and customer engagement"],
-  },
-  {
-    title: "Stakeholder & delivery coordination",
-    basis: "Engineering, business and client projects",
-    intro: "I work across technical and non-technical viewpoints to keep decisions, revisions and handoffs clear.",
-    items: ["Client and stakeholder communication", "Site and fabrication follow-up", "Coordination with architects and authorities", "Technical comments and design-query tracking", "Authority-submission support", "Requirements clarification", "Written follow-up and documentation", "Multidisciplinary handoffs", "Customer-facing communication", "Operational SOP training"],
-  },
-  {
-    title: "Systems & product analysis",
-    basis: "Direct project contribution",
-    intro: "I translate ambiguous operating needs into narrower, testable systems rather than feature lists.",
-    items: ["Requirements and workflow mapping", "Owner, cashier, learner and lecturer journeys", "Roles, permissions and business rules", "Order, payment and correction edge cases", "Acceptance criteria and scenario testing", "Process simplification and scope trade-offs", "Operational and content documentation", "Source-content validation", "Information architecture", "Stakeholder feedback into iteration"],
-  },
-  {
-    title: "Civil & structural engineering",
-    basis: "Professional engineering roles",
-    intro: "Analysis, drawings, site checks and approvals work that also informs my technical judgment in digital projects.",
-    items: ["Telecommunications monopoles and high masts", "Structural modelling and load-path checks", "Reinforced-concrete, steel and foundation design support", "Pile-capacity analysis", "Water-reticulation and sewerage documentation", "GA and fabrication drawings", "Site inspections and as-built checks", "Constructability and design revisions", "STAAD.Pro, MS Tower and OpenTower", "AutoCAD, ProtaStructure and AllPile", "FEM versus LEM slope-stability research"],
-  },
-  {
     title: "Web interfaces & CMS",
     basis: "AI-assisted projects and content planning",
     intro: "I shape and review the customer-facing experience, while being clear about AI assistance in implementation.",
@@ -62,10 +38,34 @@ const groups = [
     items: ["User-scenario and edge-case testing", "Vitest, Playwright and build checks", "Source and navigation-link auditing", "API and environment troubleshooting", "Browser and runtime verification", "Data consistency and reconciliation checks", "Technical documentation and handover", "Analytical problem decomposition", "Review comments and revision tracking", "English and Bahasa Malaysia communication"],
   },
   {
+    title: "Systems & product analysis",
+    basis: "Direct project contribution",
+    intro: "I translate ambiguous operating needs into narrower, testable systems rather than feature lists.",
+    items: ["Requirements and workflow mapping", "Owner, cashier, learner and lecturer journeys", "Roles, permissions and business rules", "Order, payment and correction edge cases", "Acceptance criteria and scenario testing", "Process simplification and scope trade-offs", "Operational and content documentation", "Source-content validation", "Information architecture", "Stakeholder feedback into iteration"],
+  },
+  {
     title: "Architecture & course concepts",
     basis: "Course exposure, not production ownership",
     intro: "These topics belong in the picture, with their experience level stated rather than inflated.",
     items: ["Frontend/API/database separation", "AWS load balancers and target groups", "Private RDS and SSH tunnelling concepts", "ACM and Secrets Manager concepts", "Terraform infrastructure-as-code workflow", "Kubernetes pods, deployments and services", "Branch protection and review gates", "Backup and recovery planning concepts"],
+  },
+  {
+    title: "Stakeholder & delivery coordination",
+    basis: "Engineering, business and client projects",
+    intro: "I keep requirements, revisions and handoffs clear across technical and non-technical teams.",
+    items: ["Client and stakeholder communication", "Requirements clarification", "Technical comments and revision tracking", "Written follow-up and documentation", "Multidisciplinary handoffs", "Authority-submission support"],
+  },
+  {
+    title: "Business operations context",
+    basis: "Direct work · Sarang co-owner",
+    intro: "A live F&B operation gives me practical cases for product requirements and usability checks.",
+    items: ["Customer and staff workflows", "Stock, sales and cost rules", "Partner expense allocation", "Training five part-time staff on SOPs", "Feedback into Vista product decisions"],
+  },
+  {
+    title: "Earlier civil-engineering experience",
+    basis: "Professional engineering roles",
+    intro: "Technical analysis and coordination experience that transfers into software delivery.",
+    items: ["Telco, reinforced-concrete, steel and foundation design support", "Structural modelling and technical drawings", "Site and as-built checks", "Client, architect and authority coordination", "STAAD.Pro, MS Tower, OpenTower and AutoCAD"],
   },
 ];
 
@@ -75,10 +75,10 @@ function Skills() {
       <section className="page-hero wrap">
         <p className="eyebrow">SKILLS / CONTEXT MATTERS</p>
         <h1>Broad skills.<br /><em>Clear evidence.</em></h1>
-        <p>My work spans business ownership, civil engineering, stakeholder delivery, product analysis, web and data projects, and hands-on cloud practice. Each group says how I gained that experience.</p>
+        <p>Web applications, APIs, data, product analysis and cloud delivery are the focus. Business and civil-engineering experience appears as supporting context, with each group clear about its evidence.</p>
       </section>
       <div className="wrap skills-context-strip" aria-label="How to read this skills inventory">
-        <span>DIRECT WORK <small>business, engineering and product decisions</small></span>
+        <span>DIRECT WORK <small>requirements, decisions and review</small></span>
         <span>AI-ASSISTED PROJECTS <small>stacks I direct, review and test</small></span>
         <span>COURSE PRACTICE <small>labs, deployments and architecture concepts</small></span>
       </div>
@@ -100,7 +100,7 @@ function Skills() {
         <div>
           <p className="eyebrow">SKILLS IN USE</p>
           <h2>See what sits behind the list.</h2>
-          <p>Sarang is the business context; Vista, Calli and the other case studies show how I translate that context into product decisions and delivery.</p>
+          <p>Vista, the Tourism Geography Tutor and the cloud project show how I turn requirements into product decisions, testing and delivery. Sarang and earlier engineering work provide context.</p>
         </div>
         <div className="skills-context-actions">
           <Link className="text-link" to="/projects">Explore case studies <span aria-hidden="true">↗</span></Link>

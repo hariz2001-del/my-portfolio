@@ -11,13 +11,13 @@ function Home() {
             <span className="eyebrow-line" /> HARIZ HELMI · KUALA LUMPUR
           </p>
           <h1 id="hero-title">
-            Business. Engineering. <em>Technology.</em>
+            Building useful <em>digital systems.</em>
           </h1>
           <p className="hero-description">
-            I bring operating judgment, engineering discipline and technical
-            curiosity to useful digital work. I co-own an F&B business, shape
-            products around real workflows, and study cloud and DevOps while
-            delivering AI-assisted web projects.
+            I shape and deliver AI-assisted web products, work through APIs and
+            data flows, and practise cloud and DevOps deployment. My business
+            and engineering background helps me ask better questions and test
+            whether the technology works in real life.
           </p>
           <div className="hero-actions">
             <Link className="button button-dark" to="/cv">
@@ -35,53 +35,53 @@ function Home() {
         <div
           className="hero-art"
           role="img"
-          aria-label="A diagram of Hariz's business, engineering, product and cloud experience"
+          aria-label="A diagram of Hariz's product, software, cloud and cross-disciplinary experience"
         >
           <div className="art-topline">
             <span>WORK / 001</span>
-            <span>FOUR CONNECTED LENSES</span>
+            <span>FROM PROBLEM TO DELIVERY</span>
           </div>
           <div className="art-heading">
-            Different lenses.
+            Build the right thing.
             <br />
-            One way of working.
+            Make it work.
           </div>
           <div className="flow-stack">
             <div className="flow-row">
               <span className="flow-number">01</span>
               <div>
-                <strong>Business operations</strong>
-                <small>Customers, staff, costs and decisions.</small>
+                <strong>Product thinking</strong>
+                <small>Requirements, workflows and edge cases.</small>
               </div>
               <span className="flow-glyph">↘</span>
             </div>
             <div className="flow-row">
               <span className="flow-number">02</span>
               <div>
-                <strong>Engineering discipline</strong>
-                <small>Analysis, constraints and documentation.</small>
+                <strong>Web applications</strong>
+                <small>Interfaces, APIs and data flows.</small>
               </div>
               <span className="flow-glyph">↘</span>
             </div>
             <div className="flow-row">
               <span className="flow-number">03</span>
               <div>
-                <strong>Digital products</strong>
-                <small>Requirements, delivery and validation.</small>
+                <strong>Cloud & DevOps</strong>
+                <small>Containers, Linux and deployment paths.</small>
               </div>
               <span className="flow-glyph">↘</span>
             </div>
             <div className="flow-row flow-final">
               <span className="flow-number">04</span>
               <div>
-                <strong>Cloud practice</strong>
-                <small>Containers, Linux and deployment paths.</small>
+                <strong>Real-world context</strong>
+                <small>Business operations and engineering rigor.</small>
               </div>
               <span className="flow-glyph">✓</span>
             </div>
           </div>
           <div className="art-stamp">
-            CONNECTING DISCIPLINES <span>✳</span>
+            PRODUCT · CODE · DEPLOYMENT <span>✳</span>
           </div>
         </div>
       </section>
@@ -89,20 +89,20 @@ function Home() {
       <div className="proof-band" aria-label="Selected evidence">
         <div className="wrap proof-grid">
           <div>
-            <strong>2025</strong>
-            <span>B.Eng. (Hons), Civil Engineering</span>
+            <strong>WEB</strong>
+            <span>React, Next.js and API-backed projects</span>
           </div>
           <div>
-            <strong>2026</strong>
-            <span>Co-owner, Sarang F&B kiosk</span>
+            <strong>DATA</strong>
+            <span>PostgreSQL, Supabase and product rules</span>
+          </div>
+          <div>
+            <strong>OPS</strong>
+            <span>Docker, Linux, EC2 and Cloudflare labs</span>
           </div>
           <div>
             <strong>09</strong>
-            <span>Documented engineering, product & cloud case studies</span>
-          </div>
-          <div>
-            <strong>05</strong>
-            <span>Part-time staff trained on SOPs</span>
+            <span>Documented projects and work case studies</span>
           </div>
         </div>
       </div>
@@ -113,17 +113,17 @@ function Home() {
       >
         <div className="section-intro">
           <div>
-            <p className="eyebrow">01 / CAREER AT A GLANCE</p>
+            <p className="eyebrow">01 / TECH WORK AT A GLANCE</p>
             <h2 id="career-title">
-              Experience that spans
+              From product idea
               <br />
-              <em>worksites and workflows.</em>
+              <em>to working system.</em>
             </h2>
           </div>
           <div className="section-intro-side">
             <p>
-              My CV brings together operating a business, technical engineering
-              work and the digital systems built from those experiences.
+              My projects show how I define a problem, review an implementation
+              and follow it through testing and deployment.
             </p>
             <Link className="text-link" to="/cv">
               Full professional profile <span aria-hidden="true">↗</span>
@@ -132,27 +132,27 @@ function Home() {
         </div>
         <div className="home-cv-grid">
           <article>
-            <span>2026 — PRESENT</span>
-            <h3>Business operations</h3>
+            <span>PRODUCT / APPLICATIONS</span>
+            <h3>Web products & APIs</h3>
             <p>
-              Co-own Sarang’s kiosk, train five staff and turn live F&B
-              scenarios into requirements for internal tools.
+              Shape AI-assisted React and Next.js products, clarify user flows,
+              review API and data behaviour, and test edge cases.
             </p>
           </article>
           <article>
-            <span>2025 — 2026</span>
-            <h3>Structural engineering</h3>
+            <span>CLOUD / DELIVERY</span>
+            <h3>DevOps practice</h3>
             <p>
-              Worked on structural analysis and drawings, coordinated technical
-              follow-up, and supported client, site and authority-facing work.
+              Build Docker images and Compose services; practise Linux, EC2,
+              Nginx, DNS, HTTPS and CI/CD in guided deployments.
             </p>
           </article>
           <article>
-            <span>2026 — PRESENT</span>
-            <h3>Digital & cloud practice</h3>
+            <span>TRANSFERABLE CONTEXT</span>
+            <h3>Business & engineering</h3>
             <p>
-              Deliver AI-assisted web projects; practise Docker, Compose,
-              Linux, EC2, Nginx, DNS and CI/CD through DevOps coursework.
+              Bring live operating requirements, stakeholder coordination and
+              analytical discipline to technical decisions.
             </p>
           </article>
         </div>
@@ -179,7 +179,7 @@ function Home() {
           </div>
         </div>
         <div className="featured-grid">
-          {["Vista", "Telco & structural design work", "Tourism Geography Tutor"]
+          {["Vista", "Tourism Geography Tutor", "Cloud & DevOps practice"]
             .map((name) => projects.find((project) => project.name === name))
             .map((project) => (
               <ProjectCard key={project.number} project={project} />
@@ -239,9 +239,8 @@ function Home() {
             </h2>
           </div>
           <p className="section-intro-side">
-            From staff operations and stakeholder requirements to product
-            review, web delivery and cloud practice—each skill is tied to its
-            real context.
+            Web products, APIs, data, testing and cloud practice come first;
+            business and engineering experience add context to the work.
           </p>
         </div>
         <div className="skills-grid">

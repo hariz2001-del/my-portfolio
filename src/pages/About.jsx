@@ -7,10 +7,8 @@ const experience = [
     role: "Co-owner, Operations & Digital Product Contributor",
     place: "Sarang · UKM Bangi",
     points: [
-      "Co-own and operate an F&B kiosk, managing bites products, purchasing and restocking, customer service, and day-to-day sales and cost decisions.",
-      "Train five part-time staff on SOPs and support customer engagement as a TikTok Live host.",
       "Translate real ordering, payment, shift and expense-split scenarios into requirements and test cases for Vista.",
-      "Balance partner accountability with simple counter routines: focus on useful reporting and avoid unnecessary cashier steps.",
+      "Co-own kiosk operations and train five part-time staff; use that experience to keep cashier flows and owner reporting practical.",
     ],
   },
   {
@@ -18,9 +16,8 @@ const experience = [
     role: "Telco Pole & Structural Design Engineer",
     place: "Oversea Deco & Industrial Sdn Bhd",
     points: [
-      "Analysed telecommunications monopoles and high masts using STAAD.Pro, MS Tower and OpenTower; prepared GA and fabrication drawings in AutoCAD.",
-      "Supported site inspections and as-built checks, then followed up design comments, fabrication needs and site constraints with technical stakeholders.",
-      "Balanced structural requirements, constructability and practical design trade-offs while keeping technical handoffs clear.",
+      "Analysed telco structures using STAAD.Pro, MS Tower and OpenTower; prepared GA and fabrication drawings in AutoCAD.",
+      "Supported site and as-built checks, design comments and technical handoffs with project stakeholders.",
     ],
   },
   {
@@ -28,33 +25,22 @@ const experience = [
     role: "Junior Engineer",
     place: "Perunding ZAB Sdn Bhd",
     points: [
-      "Supported reinforced-concrete, steel and foundation design, pile-capacity analysis, and water-reticulation and sewerage documentation.",
-      "Assisted authority submissions and coordinated design queries with clients, architects, authorities and site stakeholders.",
-      "Tracked technical comments and revisions through formal submission and delivery processes.",
+      "Supported RC, steel, foundation and infrastructure design documentation, including pile-capacity work.",
+      "Assisted authority submissions and coordinated design queries with clients, architects and site stakeholders.",
     ],
   },
 ];
 
 const capabilities = [
   {
-    title: "Business ownership & operations",
-    context: "Direct Sarang co-owner work",
+    title: "Web product technologies",
+    context: "Used in AI-assisted projects",
     items: [
-      "Menu, stock and replenishment decisions",
-      "Staff SOPs and customer service",
-      "Sales, costs and expense allocation",
-      "Partner communication and prioritisation",
-    ],
-  },
-  {
-    title: "Structural engineering & coordination",
-    context: "Professional civil-engineering work",
-    items: [
-      "Telco, RC, steel and foundation design",
-      "GA/fabrication drawings and site checks",
-      "Client and site-stakeholder coordination",
-      "Authority-submission support",
-      "Design queries, revisions and handoffs",
+      "HTML/CSS, JavaScript and responsive UI",
+      "React, Next.js, TypeScript",
+      "Supabase, PostgreSQL, Prisma",
+      "Fastify, REST APIs",
+      "DeepSeek API and WordPress planning",
     ],
   },
   {
@@ -68,28 +54,6 @@ const capabilities = [
     ],
   },
   {
-    title: "Quality & technical support",
-    context: "Applied during delivery and review",
-    items: [
-      "Order/payment-state edge cases",
-      "Data reconciliation",
-      "Source-content checks",
-      "API and deployment troubleshooting",
-    ],
-  },
-  {
-    title: "Web product technologies",
-    context: "Used in AI-assisted projects",
-    items: [
-      "HTML/CSS, JavaScript and responsive UI",
-      "React, Next.js, TypeScript",
-      "Supabase, PostgreSQL, Prisma",
-      "Fastify, REST APIs",
-      "Vitest, Playwright, DeepSeek API",
-      "WordPress CMS migration planning",
-    ],
-  },
-  {
     title: "Cloud & DevOps practice",
     context: "Hands-on learning and test deployments",
     items: [
@@ -100,44 +64,25 @@ const capabilities = [
       "GitHub Actions and Docker Hub workflows",
     ],
   },
-];
-
-const businessPillars = [
   {
-    label: "01 / OWNERSHIP",
-    title: "Run the business, not just the website",
-    copy: "As a Sarang co-owner, I make day-to-day decisions about the bites offering, customer experience, stock and operating priorities with my partner.",
-    points: ["Products and menu decisions", "Purchasing, replenishment and supplier follow-up", "Sales and cost visibility"],
+    title: "Quality & technical support",
+    context: "Applied during delivery and review",
+    items: [
+      "Vitest, Playwright and build checks",
+      "Order/payment-state edge cases",
+      "Data reconciliation and source checks",
+      "API and deployment troubleshooting",
+    ],
   },
   {
-    label: "02 / PEOPLE & SERVICE",
-    title: "Keep the counter consistent",
-    copy: "I train five part-time staff on practical SOPs and help resolve customer-facing issues. TikTok Live gives me another direct channel to understand and engage customers.",
-    points: ["Staff training and shift routines", "Customer communication", "Live promotion and feedback"],
-  },
-  {
-    label: "03 / COSTS & PARTNERS",
-    title: "Make the money understandable",
-    copy: "I distinguish direct product costs from shared expenses and work through partner allocations, reimbursements and what an owner actually needs to see in the books.",
-    points: ["Direct versus shared costs", "Expense-split rules", "Traceable sales and corrections"],
-  },
-  {
-    label: "04 / PRODUCT JUDGMENT",
-    title: "Turn operations into clear rules",
-    copy: "Sarang's real orders, discounts, shifts and exceptions inform my requirements for Vista. I prefer simpler QR-first cashier flows over controls that slow staff without adding value.",
-    points: ["Owner and cashier workflows", "Edge cases and acceptance criteria", "Practical scope decisions"],
-  },
-  {
-    label: "05 / DIGITAL PRESENCE",
-    title: "Connect offline work to online delivery",
-    copy: "I directed and deployed Sarang's AI-assisted website, worked with its domain setup, and use the live business to validate whether digital features solve genuine operating problems.",
-    points: ["Website and domain delivery", "Business content decisions", "Real-user feedback into iteration"],
-  },
-  {
-    label: "06 / TRANSFERABLE VALUE",
-    title: "Bridge commercial and technical teams",
-    copy: "I can explain a workflow from the perspectives of the owner, cashier and customer, then translate those differences into priorities for a product or implementation team.",
-    points: ["Stakeholder communication", "Process documentation", "Decision and handoff clarity"],
+    title: "Business & engineering context",
+    context: "Direct professional and co-owner work",
+    items: [
+      "Customer and staff workflows",
+      "Client and authority coordination",
+      "Structural analysis and technical drawings",
+      "Documented decisions and handoffs",
+    ],
   },
 ];
 
@@ -221,9 +166,8 @@ function About() {
           <em>Here is the work.</em>
         </h1>
         <p>
-          A detailed view of my experience, technical practice and the decisions
-          I have made across business operations, engineering and AI-assisted
-          digital products.
+          A closer look at the web products, data workflows and cloud practice
+          behind my projects, with the professional experience that informs them.
         </p>
       </section>
 
@@ -234,22 +178,21 @@ function About() {
         <div>
           <p className="eyebrow">01 / PROFESSIONAL SUMMARY</p>
           <h2 id="cv-summary-title">
-            Business, engineering and technical delivery together.
+            Product thinking, technical delivery and real-world context.
           </h2>
         </div>
         <div className="cv-summary-copy">
           <p>
-            I am a civil engineering graduate and F&B co-owner who turns
-            day-to-day operating problems into clear requirements, business
-            rules and testable workflows. I use AI-assisted development to help
-            deliver web products, then review the result against real use cases
-            and follow it through testing, deployment and support.
+            I shape AI-assisted web applications and API-backed workflows, from
+            requirements and data rules to review, testing and deployment. I
+            check whether a feature works for the people using it, not just
+            whether the build passes.
           </p>
           <p>
-            My strongest evidence is in systems thinking, product decisions,
-            operational judgment, engineering analysis and coordination. I am also
-            studying Cloud & DevOps Engineering, with hands-on practice in
-            Docker, Linux, AWS EC2 and web deployment.
+            I am studying Cloud & DevOps Engineering, with hands-on practice in
+            Docker, Linux, AWS EC2 and web delivery. Earlier civil-engineering
+            work and co-owning an F&B business give me practical experience in
+            analysis, stakeholder coordination and operational requirements.
           </p>
           <div className="cv-fact-grid">
             <div>
@@ -268,11 +211,31 @@ function About() {
         </div>
       </section>
 
+      <section className="cv-devops-section" aria-labelledby="devops-depth-title">
+        <div className="wrap">
+          <div className="section-intro">
+            <div><p className="eyebrow">02 / CLOUD & DEVOPS PRACTICE</p><h2 id="devops-depth-title">From local build<br /><em>to reachable service.</em></h2></div>
+            <p className="section-intro-side">Course-guided practical work and test deployments, with the boundaries of that experience stated clearly.</p>
+          </div>
+          <div className="cv-depth-grid">
+            {devopsPillars.map((pillar) => (
+              <article key={pillar.label}>
+                <span>{pillar.label}</span>
+                <h3>{pillar.title}</h3>
+                <p>{pillar.copy}</p>
+                <ul className="cv-depth-list">{pillar.points.map((point) => <li key={point}>{point}</li>)}</ul>
+              </article>
+            ))}
+          </div>
+          <p className="cv-devops-note">These are guided labs and test deployments, not production SRE ownership. I have also studied architecture topics such as ALB, private RDS, ACM, Secrets Manager, Terraform and Kubernetes; I do not claim to have operated those in production.</p>
+        </div>
+      </section>
+
       <section className="timeline-section" aria-labelledby="experience-title">
         <div className="wrap">
           <div className="section-intro">
             <div>
-              <p className="eyebrow">02 / WORK EXPERIENCE</p>
+              <p className="eyebrow">03 / WORK EXPERIENCE</p>
               <h2 id="experience-title">
                 The experience
                 <br />
@@ -280,8 +243,8 @@ function About() {
               </h2>
             </div>
             <p className="section-intro-side">
-              Customer-facing operations, formal engineering work and digital
-              product delivery inform how I approach a problem.
+              Professional business and engineering experience adds context to
+              the technical projects documented here.
             </p>
           </div>
           <div className="timeline cv-timeline">
@@ -304,74 +267,32 @@ function About() {
         </div>
       </section>
 
-      <section className="section wrap cv-depth-section" aria-labelledby="business-depth-title">
+      <section className="section wrap cv-depth-section" aria-labelledby="background-title">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">03 / BUSINESS IN PRACTICE</p>
-            <h2 id="business-depth-title">Ownership in practice.<br /><em>Judgment in delivery.</em></h2>
+            <p className="eyebrow">04 / PROFESSIONAL CONTEXT</p>
+            <h2 id="background-title">Experience that informs<br /><em>the technical work.</em></h2>
           </div>
-          <p className="section-intro-side">Sarang is a business I co-own, not just a case study. Its day-to-day work gives my product choices a reality check.</p>
+          <p className="section-intro-side">The focus here is the tech work. These earlier and parallel roles explain where some of my requirements and delivery habits come from.</p>
         </div>
-        <div className="cv-depth-grid">
-          {businessPillars.map((pillar) => (
-            <article key={pillar.label}>
-              <span>{pillar.label}</span>
-              <h3>{pillar.title}</h3>
-              <p>{pillar.copy}</p>
-              <ul className="cv-depth-list">{pillar.points.map((point) => <li key={point}>{point}</li>)}</ul>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="cv-engineering-section" aria-labelledby="engineering-depth-title">
-        <div className="wrap">
-          <div className="section-intro">
-            <div><p className="eyebrow">04 / CIVIL ENGINEERING</p><h2 id="engineering-depth-title">Technical work.<br /><em>Transferable discipline.</em></h2></div>
-            <p className="section-intro-side">Two engineering roles gave me a foundation in analysis, controlled documentation, client and site coordination, and navigating formal approval processes.</p>
-          </div>
-          <div className="engineering-detail-grid">
-            <article>
-              <span className="engineering-kicker">OVERSEA DECO & INDUSTRIAL · 2025–2026</span>
-              <h3>Telco pole & structural design</h3>
-              <p>Analysed telecommunications monopoles and high masts with STAAD.Pro, MS Tower and OpenTower. Prepared GA and fabrication drawings, supported site/as-built checks and worked through design comments, fabrication requirements and implementation follow-up.</p>
-              <ul><li>Structural modelling and load-path thinking</li><li>AutoCAD drawings and revision control</li><li>Site verification and stakeholder clarification</li></ul>
-            </article>
-            <article>
-              <span className="engineering-kicker">PERUNDING ZAB · 2025</span>
-              <h3>Building and infrastructure design support</h3>
-              <p>Supported reinforced-concrete, steel and foundation design, pile-capacity analysis, and water-reticulation and sewerage documentation. Assisted authority submissions and coordinated design queries among clients, architects, authorities and site teams.</p>
-              <ul><li>ProtaStructure, STAAD.Pro and AllPile exposure</li><li>Submission and technical-approval follow-up</li><li>Client-facing and multidisciplinary coordination</li></ul>
-            </article>
-          </div>
-          <div className="engineering-transfer"><strong>What transfers into tech work</strong><p>Decompose complex problems, record assumptions, respond to review comments, align multiple stakeholders, and carry a decision through to a clear handoff.</p></div>
-        </div>
-      </section>
-
-      <section className="cv-devops-section" aria-labelledby="devops-depth-title">
-        <div className="wrap">
-          <div className="section-intro">
-            <div><p className="eyebrow">05 / CLOUD & DEVOPS PRACTICE</p><h2 id="devops-depth-title">From local build<br /><em>to reachable service.</em></h2></div>
-            <p className="section-intro-side">Course-guided practical work and test deployments, with the boundaries of that experience stated clearly.</p>
-          </div>
-          <div className="cv-depth-grid">
-            {devopsPillars.map((pillar) => (
-              <article key={pillar.label}>
-                <span>{pillar.label}</span>
-                <h3>{pillar.title}</h3>
-                <p>{pillar.copy}</p>
-                <ul className="cv-depth-list">{pillar.points.map((point) => <li key={point}>{point}</li>)}</ul>
-              </article>
-            ))}
-          </div>
-          <p className="cv-devops-note">These are guided labs and test deployments, not production SRE ownership. I have also studied architecture topics such as ALB, private RDS, ACM, Secrets Manager, Terraform and Kubernetes; I do not claim to have operated those in production.</p>
+        <div className="engineering-detail-grid">
+          <article>
+            <span className="engineering-kicker">SARANG · CO-OWNER</span>
+            <h3>Real operating context</h3>
+            <p>Orders, shifts, staff routines and cost rules give me concrete scenarios for Vista’s POS and owner workflows.</p>
+          </article>
+          <article>
+            <span className="engineering-kicker">CIVIL ENGINEERING · EARLIER ROLES</span>
+            <h3>Analysis and coordination</h3>
+            <p>Structural design, technical drawings and stakeholder follow-up strengthened my documentation, review and handoff discipline.</p>
+          </article>
         </div>
       </section>
 
       <section className="section wrap" aria-labelledby="cv-skills-title">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">06 / SKILLS & TOOLS</p>
+            <p className="eyebrow">05 / SKILLS & TOOLS</p>
             <h2 id="cv-skills-title">
               What I can
               <br />
@@ -415,7 +336,7 @@ function About() {
       >
         <div className="wrap cv-education-layout">
           <div>
-            <p className="eyebrow">07 / EDUCATION & DEVELOPMENT</p>
+            <p className="eyebrow">06 / EDUCATION & DEVELOPMENT</p>
             <h2 id="education-title">
               Formal training.
               <br />
