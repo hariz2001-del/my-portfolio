@@ -450,6 +450,12 @@
 .project-portfolio .project-art {
   background: #6b5577;
 }
+.project-chopper .project-art {
+  background: #2f5f52;
+}
+.project-hedwig .project-art {
+  background: #5a4a6e;
+}
 .project-body {
   display: flex;
   flex: 1;
@@ -1659,6 +1665,8 @@
 .project-devops .project-art { background: #102b59; }
 .project-sarang .project-art { background: #246485; }
 .project-portfolio .project-art { background: #3d5395; }
+.project-chopper .project-art { background: #0f6b7a; }
+.project-hedwig .project-art { background: #45468f; }
 .project-engineering .project-art { background: #174874; }
 .project-ai-note,
 .cv-integrity-note { background: #e5f1ff; border-color: #41a9e7; }

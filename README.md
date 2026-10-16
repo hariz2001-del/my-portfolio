@@ -22,4 +22,4 @@ Cloudflare Pages serves the React Router routes as an SPA when there is no top-l
 
 ## Updating portfolio content
 
-Project and skill copy lives in [`src/data/portfolio.js`](src/data/portfolio.js); the fuller CV is in [`src/pages/About.jsx`](src/pages/About.jsx). Keep each status and contribution current before publishing. Aztech Calli is on hold and intentionally has no live link. Do not present planned WordPress work, unfinished Vista features or course-level DevOps exercises as completed production experience.
+Project and skill copy lives in [`src/data/portfolio.js`](src/data/portfolio.js); the fuller CV is in [`src/pages/About.jsx`](src/pages/About.jsx). Keep each status and contribution current before publishing. Aztech Calli is on hold and intentionally has no live link. Chopper and Hedwig are private Telegram agents: keep Chopper's owner-acceptance status and Hedwig's approval-gated, not-yet-publishing status accurate. Do not present planned WordPress work, unfinished Vista features or course-level DevOps exercises as completed production experience.

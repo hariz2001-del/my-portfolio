@@ -13,8 +13,9 @@ function Projects() {
         </h1>
         <p>
           The problem, my contribution, features, stack, status and AI
-          involvement where relevant. Aztech Calli is on hold, so its live link has
-          been removed; Vista remains an internal pilot.
+          involvement where relevant. Chopper and Hedwig are private Telegram
+          agents, so they have no public link; Aztech Calli is on hold and Vista
+          replaced it for Sarang.
         </p>
       </section>
       <section

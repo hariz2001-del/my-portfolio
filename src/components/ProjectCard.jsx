@@ -1,8 +1,12 @@
+import { projects } from "../data/portfolio";
+
+const projectTotal = String(projects.length).padStart(2, "0");
+
 function ProjectCard({ project, detailed = false }) {
   return (
     <article className={`project-card project-${project.theme}`}>
       <div className="project-art" aria-hidden="true">
-        <span className="project-art-index">{project.number} / 09</span>
+        <span className="project-art-index">{project.number} / {projectTotal}</span>
         <span className="project-art-mark">
           {project.artMark || (project.name === "Cloud & DevOps practice"
             ? "DEV/OPS"
@@ -56,7 +60,9 @@ function ProjectCard({ project, detailed = false }) {
           <span className="project-link muted-link">
             {project.status === "On hold"
               ? "Project on hold · no live link"
-              : "Internal working project · no public link"}
+              : project.theme === "chopper" || project.theme === "hedwig"
+                ? "Private Telegram agent · walkthrough on request"
+                : "Internal working project · no public link"}
           </span>
         )}
       </div>
