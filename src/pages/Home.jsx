@@ -14,10 +14,10 @@ function Home() {
             Building useful <em>digital systems.</em>
           </h1>
           <p className="hero-description">
-            I shape and deliver AI-assisted web products, work through APIs and
-            data flows, and practise cloud and DevOps deployment. My business
-            and engineering background helps me ask better questions and test
-            whether the technology works in real life.
+            I shape and deliver AI-assisted web products, build Telegram agents
+            that work against real business systems, and deploy them on cloud
+            infrastructure. My business and engineering background helps me ask
+            better questions and test whether the technology works in real life.
           </p>
           <div className="hero-actions">
             <Link className="button button-dark" to="/cv">
@@ -28,8 +28,8 @@ function Home() {
             </Link>
           </div>
           <p className="hero-footnote">
-            <span className="pulse-dot" /> Studying Cloud & DevOps Engineering
-            alongside hands-on product work
+            <span className="pulse-dot" /> Completed Cloud & DevOps Engineering
+            · now running Hermes agents for a real F&B business
           </p>
         </div>
         <div
@@ -58,8 +58,8 @@ function Home() {
             <div className="flow-row">
               <span className="flow-number">02</span>
               <div>
-                <strong>Web applications</strong>
-                <small>Interfaces, APIs and data flows.</small>
+                <strong>Web apps & agents</strong>
+                <small>Interfaces, APIs, data flows and guarded agents.</small>
               </div>
               <span className="flow-glyph">↘</span>
             </div>
@@ -93,15 +93,15 @@ function Home() {
             <span>React, Next.js and API-backed projects</span>
           </div>
           <div>
-            <strong>DATA</strong>
-            <span>PostgreSQL, Supabase and product rules</span>
+            <strong>AGENTS</strong>
+            <span>Hermes, MCP tools and Telegram workflows</span>
           </div>
           <div>
             <strong>OPS</strong>
-            <span>Docker, Linux, EC2 and Cloudflare labs</span>
+            <span>Docker, Linux, EC2, CI/CD and a self-hosted VPS</span>
           </div>
           <div>
-            <strong>09</strong>
+            <strong>{projects.length}</strong>
             <span>Documented projects and work case studies</span>
           </div>
         </div>
@@ -133,18 +133,18 @@ function Home() {
         <div className="home-cv-grid">
           <article>
             <span>PRODUCT / APPLICATIONS</span>
-            <h3>Web products & APIs</h3>
+            <h3>Web products, APIs & agents</h3>
             <p>
-              Shape AI-assisted React and Next.js products, clarify user flows,
-              review API and data behaviour, and test edge cases.
+              Shape AI-assisted React products and Telegram agents, clarify user
+              flows, review API and data behaviour, and test edge cases.
             </p>
           </article>
           <article>
             <span>CLOUD / DELIVERY</span>
-            <h3>DevOps practice</h3>
+            <h3>DevOps & hosting</h3>
             <p>
-              Build Docker images and Compose services; practise Linux, EC2,
-              Nginx, DNS, HTTPS and CI/CD in guided deployments.
+              Docker, Linux, EC2, Nginx, DNS, HTTPS and GitHub Actions from a
+              completed programme, plus my own Ubuntu VPS for the agents.
             </p>
           </article>
           <article>
@@ -179,7 +179,7 @@ function Home() {
           </div>
         </div>
         <div className="featured-grid">
-          {["Vista", "Tourism Geography Tutor", "Cloud & DevOps practice"]
+          {["Chopper", "Hedwig", "Vista"]
             .map((name) => projects.find((project) => project.name === name))
             .map((project) => (
               <ProjectCard key={project.number} project={project} />
@@ -187,10 +187,59 @@ function Home() {
         </div>
       </section>
 
+      <section
+        className="section wrap home-cv-section"
+        aria-labelledby="hermes-title"
+      >
+        <div className="section-intro">
+          <div>
+            <p className="eyebrow">03 / AGENT PLATFORM</p>
+            <h2 id="hermes-title">
+              Chopper and Hedwig
+              <br />
+              <em>run on Hermes.</em>
+            </h2>
+          </div>
+          <p className="section-intro-side">
+            Hermes is an open-source agent runtime that I self-host on an Ubuntu
+            VPS. Each agent is a separate profile with its own model settings,
+            tools, credentials and Telegram bot.
+          </p>
+        </div>
+        <div className="home-cv-grid">
+          <article>
+            <span>RUNTIME / HOSTING</span>
+            <h3>One VPS, isolated agents</h3>
+            <p>
+              The Hermes gateway runs as a systemd service and reloads without
+              downtime. A cron-driven worker processes leased jobs with bounded
+              retries.
+            </p>
+          </article>
+          <article>
+            <span>TOOLS / DATA</span>
+            <h3>Real systems, not demos</h3>
+            <p>
+              Python MCP servers connect the agents to Vista's API, Google
+              Drive, research stores and a marketing PostgreSQL database.
+            </p>
+          </article>
+          <article>
+            <span>GUARDRAILS / IN CODE</span>
+            <h3>People confirm the writes</h3>
+            <p>
+              The real Telegram sender is bound to every tool call. Models
+              prepare previews, and only a person's button press commits them.
+              Workers cannot post or delete records.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section className="approach-section" aria-labelledby="approach-title">
         <div className="wrap approach-layout">
           <div className="approach-heading">
-            <p className="eyebrow">03 / HOW I ADD VALUE</p>
+            <p className="eyebrow">04 / HOW I ADD VALUE</p>
             <h2 id="approach-title">
               Technical enough to deliver.
               <br />
@@ -233,13 +282,13 @@ function Home() {
       <section className="section wrap" aria-labelledby="skills-title">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">04 / CAPABILITIES</p>
+            <p className="eyebrow">05 / CAPABILITIES</p>
             <h2 id="skills-title">
               A practical, <em>cross-disciplinary</em> toolkit.
             </h2>
           </div>
           <p className="section-intro-side">
-            Web products, APIs, data, testing and cloud practice come first;
+            Web products, agents, APIs, data, testing and cloud practice come first;
             business and engineering experience add context to the work.
           </p>
         </div>
@@ -258,8 +307,8 @@ function Home() {
           ))}
         </div>
         <p className="skills-note">
-          Kubernetes is an upcoming course module, not claimed as production
-          experience.
+          Kubernetes and Terraform were covered as course fundamentals; neither
+          is claimed as production experience.
         </p>
         <Link className="text-link skills-more-link" to="/skills">Explore the full skills inventory <span aria-hidden="true">↗</span></Link>
       </section>
@@ -267,7 +316,7 @@ function Home() {
       <section className="cta-section">
         <div className="wrap cta-layout">
           <div>
-            <p className="eyebrow">05 / NEXT CONVERSATION</p>
+            <p className="eyebrow">06 / NEXT CONVERSATION</p>
             <h2>
               Have a problem worth
               <br />

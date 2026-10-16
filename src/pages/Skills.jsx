@@ -14,6 +14,12 @@ const groups = [
     items: ["Node.js, Express and Fastify", "REST and JSON APIs", "Authentication and role-aware workflows", "API-key header patterns", "Zod validation, JWT and bcrypt in projects", "DeepSeek API-backed question flows", "Gemini-assisted content/OCR workflows", "Python and PyMuPDF content processing", "Vite and Next.js build checks", "Environment-based configuration"],
   },
   {
+    title: "AI agents & automation",
+    basis: "Direct project work · Chopper and Hedwig",
+    intro: "Agents that act on real business data, built so a person confirms every write. AI-assisted implementation; I own the workflow, permissions, testing and operation.",
+    items: ["Hermes Agent profiles, models and gateway", "Python MCP tool servers", "Telegram bots, native buttons and slash menus", "Preview-and-confirm bookkeeping writes", "Actor-bound identity and permission checks", "Leased background jobs with bounded retries", "Google Drive evidence filing via OAuth", "Supervisor routing across specialist agents", "Immutable proposals and owner approval gates", "Scenario and adversarial agent evaluation"],
+  },
+  {
     title: "Data & operational systems",
     basis: "AI-assisted products plus guided database labs",
     intro: "My focus is on data meaning, traceability and business rules; the tools span both project and course work.",
@@ -23,13 +29,13 @@ const groups = [
     title: "Cloud, Linux & networking",
     basis: "Hands-on course labs and test deployments",
     intro: "I have worked through the practical route from a local service to a reachable host and domain.",
-    items: ["AWS EC2 and Ubuntu administration", "Security Groups and Elastic IP", "SSH/Ed25519 keys and scp", "apt, ownership and file permissions", "Nginx virtual hosts and reverse proxy", "Cloudflare DNS, nameservers and TTL", "Cloudflare Pages and custom domains", "Certbot and HTTPS setup", "systemd service management", "Port, process, memory and disk diagnostics"],
+    items: ["AWS EC2 and Ubuntu administration", "Security Groups and Elastic IP", "SSH/Ed25519 keys and scp", "apt, ownership and file permissions", "Nginx virtual hosts and reverse proxy", "Cloudflare DNS, nameservers and TTL", "Cloudflare Pages and custom domains", "Certbot and HTTPS setup", "systemd service management", "Port, process, memory and disk diagnostics", "Self-hosted Ubuntu VPS for the Hermes agents"],
   },
   {
     title: "Containers, Git & CI/CD",
     basis: "Guided deployment work and workflow practice",
     intro: "I distinguish the lab work I performed from more advanced delivery patterns covered in the course.",
-    items: ["Docker Engine, Dockerfiles and Node Alpine images", "Docker Compose services and named volumes", "Port mapping and host/container networking", "Container lifecycle, logs and image tags", "Git/GitHub branches, commits and pull requests", "Repository hygiene and .gitignore", "GitHub Actions build/test gates", "Artifacts, Secrets and Variables", "Docker Hub and SSH-to-EC2 deployment patterns", "Cloudflare Pages preview/production flow"],
+    items: ["Docker Engine, Dockerfiles and Node Alpine images", "Docker Compose services and named volumes", "Port mapping and host/container networking", "Container lifecycle, logs and image tags", "Git/GitHub branches, commits and pull requests", "Repository hygiene and .gitignore", "GitHub Actions build, push and SSH deploy pipeline", "Environment Variables and Secrets written to .env at deploy time", "host.docker.internal and container-to-host database access", "Cloudflare Pages preview/production flow"],
   },
   {
     title: "Quality, troubleshooting & communication",
@@ -100,7 +106,7 @@ function Skills() {
         <div>
           <p className="eyebrow">SKILLS IN USE</p>
           <h2>See what sits behind the list.</h2>
-          <p>Vista, the Tourism Geography Tutor and the cloud project show how I turn requirements into product decisions, testing and delivery. Sarang and earlier engineering work provide context.</p>
+          <p>Chopper, Hedwig, Vista, the Tourism Geography Tutor and the cloud project show how I turn requirements into product decisions, testing and delivery. Sarang and earlier engineering work provide context.</p>
         </div>
         <div className="skills-context-actions">
           <Link className="text-link" to="/projects">Explore case studies <span aria-hidden="true">↗</span></Link>

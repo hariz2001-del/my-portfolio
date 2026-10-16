@@ -8,6 +8,7 @@ const experience = [
     place: "Sarang · UKM Bangi",
     points: [
       "Translate real ordering, payment, shift and expense-split scenarios into requirements and test cases for Vista.",
+      "Define what the Chopper bookkeeping agent and Hedwig marketing agents may do, and test them against real receipts and approval scenarios.",
       "Co-own kiosk operations and train five part-time staff; use that experience to keep cashier flows and owner reporting practical.",
     ],
   },
@@ -41,6 +42,17 @@ const capabilities = [
       "Supabase, PostgreSQL, Prisma",
       "Fastify, REST APIs",
       "DeepSeek API and WordPress planning",
+    ],
+  },
+  {
+    title: "AI agents & automation",
+    context: "Chopper and Hedwig on self-hosted Hermes",
+    items: [
+      "Hermes agent profiles and Python MCP tools",
+      "Telegram bots with native buttons",
+      "Preview-and-confirm writes, actor-bound permissions",
+      "Leased background jobs and bounded retries",
+      "Scenario and adversarial agent testing",
     ],
   },
   {
@@ -120,18 +132,18 @@ const devopsPillars = [
   {
     label: "06 / VERSIONING & CI/CD",
     title: "Follow a release through",
-    copy: "I use Git branches and pull requests. Coursework covered GitHub Actions build/test gates, artifacts, repository Secrets and Variables, Docker Hub images and SSH-based EC2 deployment.",
-    points: ["Git and PR workflow", "Build, test and artifact handoff", "Image publishing and deployment patterns"],
+    copy: "I use Git branches and pull requests. My course API deploys through GitHub Actions: it builds and pushes a Docker Hub image, then over SSH writes the container's .env from environment Variables and Secrets and restarts it.",
+    points: ["Git and PR workflow", "Docker Hub image publishing", "Deploy-time secrets with --env-file"],
   },
 ];
 
 const education = [
   {
-    period: "2026 · IN PROGRESS",
+    period: "2026 · COMPLETED",
     title: "Cloud & DevOps Engineering Programme",
     place: "Lejiend Education",
     detail:
-      "Hands-on Dockerfiles, Docker Compose, Ubuntu, EC2 deployment, SSH, Nginx, DNS, HTTPS, container networking and databases. GitHub Actions CI/CD in coursework; Kubernetes and Terraform are course-pathway topics, not production claims.",
+      "Hands-on Dockerfiles, Docker Compose, Ubuntu, EC2 deployment, SSH, Nginx, DNS, HTTPS, container networking, databases and GitHub Actions CI/CD. Kubernetes and Terraform were covered as fundamentals, not production claims. No cloud-vendor certification is claimed.",
   },
   {
     period: "OCT 2020 — FEB 2025",
@@ -189,8 +201,14 @@ function About() {
             whether the build passes.
           </p>
           <p>
-            I am studying Cloud & DevOps Engineering, with hands-on practice in
-            Docker, Linux, AWS EC2 and web delivery. Earlier civil-engineering
+            I build Hermes-based Telegram agents that work against real
+            business data, including Chopper for bookkeeping and Hedwig for
+            approval-gated marketing, and host them on my own Ubuntu VPS.
+          </p>
+          <p>
+            I completed Lejiend Education's Cloud & DevOps Engineering
+            programme in 2026, with hands-on practice in Docker, Linux, AWS EC2,
+            CI/CD and web delivery. Earlier civil-engineering
             work and co-owning an F&B business give me practical experience in
             analysis, stakeholder coordination and operational requirements.
           </p>
@@ -279,7 +297,7 @@ function About() {
           <article>
             <span className="engineering-kicker">SARANG · CO-OWNER</span>
             <h3>Real operating context</h3>
-            <p>Orders, shifts, staff routines and cost rules give me concrete scenarios for Vista’s POS and owner workflows.</p>
+            <p>Orders, shifts, receipts, staff routines and cost rules give me concrete scenarios for Vista’s POS and owner workflows, and for what the Chopper and Hedwig agents should and should not do.</p>
           </article>
           <article>
             <span className="engineering-kicker">CIVIL ENGINEERING · EARLIER ROLES</span>
@@ -362,7 +380,7 @@ function About() {
           <h2>See the decisions in context.</h2>
           <p>
             The project case studies show my part in each build, its technical
-            stack, and whether it is live, an internal pilot, professional work or on hold.
+            stack, and whether it is live, awaiting acceptance, gated, professional work or on hold.
           </p>
         </div>
         <Link className="button button-dark" to="/projects">
