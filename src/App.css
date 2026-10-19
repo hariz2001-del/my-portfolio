@@ -1741,3 +1741,299 @@
   .skills-context-strip { grid-template-columns: 1fr; }
   .skills-context-strip span { border-right: 0; border-bottom: 1px solid #cbd9ea; }
 }
+
+/* ---- Vista spotlight ---- */
+.vista-spotlight {
+  --vista-green: #173a33;
+  --vista-green-deep: #10281f;
+  --vista-orange: #ef6c35;
+  position: relative;
+  overflow: hidden;
+  padding: 88px 0 72px;
+  color: #f1eee6;
+  background:
+    radial-gradient(900px 480px at 80% -10%, rgba(121, 210, 194, 0.18), transparent 70%),
+    linear-gradient(180deg, var(--vista-green) 0%, var(--vista-green-deep) 100%);
+}
+.vista-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 56px;
+  align-items: center;
+}
+.vista-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 28px;
+  font: 700 11px var(--display);
+  letter-spacing: 0.14em;
+  color: #9ec8bd;
+}
+.vista-kicker-line {
+  width: 38px;
+  height: 1px;
+  background: var(--vista-orange);
+}
+.vista-logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+.vista-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+.vista-spotlight h2 {
+  margin: 0;
+  font: 700 clamp(52px, 7vw, 92px) / 0.95 var(--display);
+  letter-spacing: -0.06em;
+  color: #fff;
+}
+.vista-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border: 1px solid rgba(158, 200, 189, 0.4);
+  border-radius: 99px;
+  font: 700 10px var(--display);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #bfe3d8;
+}
+.vista-live span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5fe0a8;
+}
+.vista-tagline {
+  margin: 22px 0 10px;
+  font: 600 clamp(22px, 2.6vw, 30px) / 1.25 var(--display);
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.vista-intro {
+  max-width: 560px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #c3d6cf;
+}
+.vista-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 14px;
+  margin-top: 32px;
+}
+.vista-button {
+  background: var(--vista-orange);
+  border-color: var(--vista-orange);
+  color: #fff;
+}
+.vista-button:hover {
+  background: #ff7d47;
+  border-color: #ff7d47;
+}
+.vista-demo-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  min-height: 52px;
+  padding: 8px 18px;
+  border: 1px solid rgba(241, 238, 230, 0.28);
+  color: #fff;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.vista-demo-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(241, 238, 230, 0.6);
+}
+.vista-demo-link strong {
+  font: 600 14px var(--display);
+}
+.vista-demo-link small {
+  font-size: 11px;
+  color: #9ec8bd;
+}
+.vista-video-link {
+  display: inline-block;
+  margin-top: 20px;
+  font: 600 13px var(--display);
+  color: #ffb08a;
+  border-bottom: 1px solid rgba(255, 176, 138, 0.45);
+  padding-bottom: 3px;
+}
+.vista-video-link:hover {
+  color: #fff;
+  border-color: #fff;
+}
+.vista-screens {
+  position: relative;
+  min-height: 420px;
+}
+.vista-screen {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.vista-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.vista-screen figcaption {
+  padding: 8px 14px;
+  background: #0d1f1a;
+  font: 700 10px var(--display);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9ec8bd;
+}
+.vista-screen-bar {
+  display: flex;
+  gap: 6px;
+  padding: 9px 12px;
+  background: #0d1f1a;
+}
+.vista-screen-bar i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+.vista-screen-main {
+  width: 86%;
+}
+.vista-screen-side {
+  position: absolute;
+  right: 0;
+  bottom: -34px;
+  width: 62%;
+}
+.vista-apps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 84px;
+}
+.vista-app {
+  display: flex;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid rgba(241, 238, 230, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.vista-app:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(239, 108, 53, 0.7);
+  transform: translateY(-2px);
+}
+.vista-app img {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+}
+.vista-app-role {
+  font: 700 10px var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9ec8bd;
+}
+.vista-app h3 {
+  margin: 6px 0 8px;
+  font: 600 21px var(--display);
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.vista-app p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #c3d6cf;
+}
+.vista-app small {
+  display: block;
+  margin-top: 12px;
+  font: 600 11px var(--display);
+  color: #ffb08a;
+}
+.vista-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 40px;
+  border-top: 1px solid rgba(241, 238, 230, 0.16);
+}
+.vista-facts div {
+  padding: 22px 20px 0 0;
+}
+.vista-facts strong {
+  display: block;
+  font: 700 28px / 1 var(--display);
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+.vista-facts span {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9ec8bd;
+}
+.project-art-logo {
+  position: absolute;
+  left: 22px;
+  top: 52px;
+  width: 84px;
+  height: 84px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+.project-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+}
+@media (max-width: 1050px) {
+  .vista-layout {
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+  .vista-apps {
+    grid-template-columns: 1fr;
+  }
+  .vista-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .vista-spotlight {
+    padding: 64px 0 56px;
+  }
+  .vista-screens {
+    min-height: 0;
+  }
+  .vista-screen-main {
+    width: 100%;
+  }
+  .vista-screen-side {
+    position: static;
+    width: 100%;
+    margin-top: 18px;
+  }
+  .vista-actions {
+    flex-direction: column;
+  }
+}
+.project-vista .project-art { background: #173a33; }
