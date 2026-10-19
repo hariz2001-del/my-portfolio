@@ -15,8 +15,16 @@ export const projects = [
     number: "01",
     name: "Vista",
     type: "POS, restaurant & staff operations",
-    status: "In use at Sarang",
+    status: "Live · in use at Sarang",
     theme: "vista",
+    logo: "/vista/vista-pos-icon.webp",
+    link: "https://vistahub.my",
+    linkLabel: "Visit vistahub.my",
+    links: [
+      { label: "Visit vistahub.my", href: "https://vistahub.my" },
+      { label: "Try the counter (demo)", href: "https://demopos.vistahub.my" },
+      { label: "Try the books (demo)", href: "https://demorms.vistahub.my" },
+    ],
     lead: "A QR-first POS and restaurant-management system for the kiosk I co-own, now the record Chopper works against.",
     problem: "The counter needed resilient cashless sales while owners needed a clear view of money movement, staff time and partner settlement.",
     contribution:
@@ -27,7 +35,8 @@ export const projects = [
       "Worked through paid and cancelled states, offline checkout, discount allocation and integer-sen accounting.",
       "Touch-first POS supports catalogue, modifiers, discounts, shift flows and paid-sale corrections.",
       "Owner RMS covers cashflow, expenses with linked receipt scans, inventory, rosters, attendance, wages and partner settlement.",
-      "POS, RMS and API run on custom domains for Sarang's own operations; the Chopper agent uses the same authenticated API. It is not offered to other businesses.",
+      "POS, RMS, Team and API run on custom domains. Sarang is the business running on it every day, and the Chopper agent uses the same authenticated API.",
+      "A public landing page at vistahub.my, with demo POS and RMS apps on sample data, shows the product without any sign-in.",
     ],
     aiNote: "AI-assisted development. My direct contribution is operating requirements, scope, business rules, scenario tests and review.",
   },
@@ -269,3 +278,55 @@ export const skillGroups = [
     tags: ["Requirements", "Staff workflows", "Cost rules", "Technical drawings", "Coordination"],
   },
 ];
+
+export const vista = {
+  name: "Vista",
+  tagline: "Run the stall from one tablet and one phone.",
+  intro:
+    "Vista is the product I use most. It runs the counter at Sarang, the kiosk I co-own, and keeps the owner's books, stock, rosters and payroll in one place. Chopper, my Telegram bookkeeping agent, files into the same system.",
+  site: { label: "Visit vistahub.my", href: "https://vistahub.my" },
+  demos: [
+    { label: "Try the counter", note: "Demo POS · sample data", href: "https://demopos.vistahub.my" },
+    { label: "Try the books", note: "Demo RMS · sample data", href: "https://demorms.vistahub.my" },
+  ],
+  video: { label: "Watch the 5-minute walkthrough", href: "https://vistahub.my/videos/vista-demo.mp4" },
+  apps: [
+    {
+      key: "pos",
+      name: "POS",
+      role: "The counter tablet",
+      icon: "/vista/vista-pos-icon.webp",
+      href: "https://pos.vistahub.my",
+      domain: "pos.vistahub.my",
+      text: "Takes orders and DuitNow QR payments, keeps selling when the connection drops, and sends sales on once it is back.",
+    },
+    {
+      key: "rms",
+      name: "RMS",
+      role: "The owner's books",
+      icon: "/vista/vista-rms-icon.webp",
+      href: "https://rms.vistahub.my",
+      domain: "rms.vistahub.my",
+      text: "Cashflow, expenses with linked receipt scans, stock, menu, partner settlement and what each person is owed.",
+    },
+    {
+      key: "team",
+      name: "Team",
+      role: "Staff shifts and pay",
+      icon: "/vista/vista-team-icon.webp",
+      href: "https://team.vistahub.my",
+      domain: "team.vistahub.my",
+      text: "Rosters, attendance and wages for staff, on a phone.",
+    },
+  ],
+  screens: [
+    { src: "/vista/vista-pos-screen.webp", alt: "Vista counter POS showing a menu of food and drinks with an empty order", caption: "Counter POS · demo data" },
+    { src: "/vista/vista-rms-screen.webp", alt: "Vista RMS owner ledger showing net sales, money in the bank and operating result", caption: "Owner RMS · demo data" },
+  ],
+  facts: [
+    ["3", "apps: counter, books and team"],
+    ["4-digit", "PIN is all the cashier needs"],
+    ["Offline", "counter keeps selling, then syncs"],
+    ["Separate", "books for every business"],
+  ],
+};

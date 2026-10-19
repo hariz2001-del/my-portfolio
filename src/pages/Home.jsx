@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { projects, skillGroups } from "../data/portfolio";
 import ProjectCard from "../components/ProjectCard";
+import VistaSpotlight from "../components/VistaSpotlight";
 
 function Home() {
   return (
@@ -107,13 +108,15 @@ function Home() {
         </div>
       </div>
 
+      <VistaSpotlight />
+
       <section
         className="section wrap home-cv-section"
         aria-labelledby="career-title"
       >
         <div className="section-intro">
           <div>
-            <p className="eyebrow">01 / TECH WORK AT A GLANCE</p>
+            <p className="eyebrow">02 / TECH WORK AT A GLANCE</p>
             <h2 id="career-title">
               From product idea
               <br />
@@ -161,7 +164,7 @@ function Home() {
       <section className="section wrap" aria-labelledby="work-title">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">02 / SELECTED WORK</p>
+            <p className="eyebrow">03 / SELECTED WORK</p>
             <h2 id="work-title">
               Work with a reason
               <br />
@@ -179,7 +182,7 @@ function Home() {
           </div>
         </div>
         <div className="featured-grid">
-          {["Chopper", "Hedwig", "Vista"]
+          {["Chopper", "Hedwig", "Tourism Geography Tutor"]
             .map((name) => projects.find((project) => project.name === name))
             .map((project) => (
               <ProjectCard key={project.number} project={project} />
@@ -193,7 +196,7 @@ function Home() {
       >
         <div className="section-intro">
           <div>
-            <p className="eyebrow">03 / AGENT PLATFORM</p>
+            <p className="eyebrow">04 / AGENT PLATFORM</p>
             <h2 id="hermes-title">
               Chopper and Hedwig
               <br />
@@ -239,7 +242,7 @@ function Home() {
       <section className="approach-section" aria-labelledby="approach-title">
         <div className="wrap approach-layout">
           <div className="approach-heading">
-            <p className="eyebrow">04 / HOW I ADD VALUE</p>
+            <p className="eyebrow">05 / HOW I ADD VALUE</p>
             <h2 id="approach-title">
               Technical enough to deliver.
               <br />
@@ -282,7 +285,7 @@ function Home() {
       <section className="section wrap" aria-labelledby="skills-title">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">05 / CAPABILITIES</p>
+            <p className="eyebrow">06 / CAPABILITIES</p>
             <h2 id="skills-title">
               A practical, <em>cross-disciplinary</em> toolkit.
             </h2>
@@ -316,7 +319,7 @@ function Home() {
       <section className="cta-section">
         <div className="wrap cta-layout">
           <div>
-            <p className="eyebrow">06 / NEXT CONVERSATION</p>
+            <p className="eyebrow">07 / NEXT CONVERSATION</p>
             <h2>
               Have a problem worth
               <br />

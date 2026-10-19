@@ -7,6 +7,9 @@ function ProjectCard({ project, detailed = false }) {
     <article className={`project-card project-${project.theme}`}>
       <div className="project-art" aria-hidden="true">
         <span className="project-art-index">{project.number} / {projectTotal}</span>
+        {project.logo && (
+          <img className="project-art-logo" src={project.logo} alt="" width="84" height="84" />
+        )}
         <span className="project-art-mark">
           {project.artMark || (project.name === "Cloud & DevOps practice"
             ? "DEV/OPS"
@@ -47,7 +50,21 @@ function ProjectCard({ project, detailed = false }) {
             <span key={item}>{item}</span>
           ))}
         </div>
-        {project.hideLink ? null : project.link ? (
+        {project.hideLink ? null : project.links && detailed ? (
+          <div className="project-link-row">
+            {project.links.map((item) => (
+              <a
+                key={item.href}
+                className="project-link"
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {item.label} <span aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </div>
+        ) : project.link ? (
           <a
             className="project-link"
             href={project.link}
