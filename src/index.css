@@ -1,7 +1,7 @@
 :root {
   font-family: "DM Sans", sans-serif;
-  color: #111e34;
-  background: #f5f8fd;
+  color: #0a1f18;
+  background: #f7fbfa;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -26,6 +26,6 @@ button {
   cursor: pointer;
 }
 ::selection {
-  background: #8fd8ff;
-  color: #0b1f3b;
+  background: #a8e6c0;
+  color: #072318;
 }
