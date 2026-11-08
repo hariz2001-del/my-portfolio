@@ -1,17 +1,15 @@
-name: Cloudflare Deployment
+name: Building the CI
 on:
   push:
     branches:
       - development
+      - main
   pull_request:
-    types:
-      - closed
     branches:
       - main
 
 jobs:
-  development-deployment:
-    if: github.ref == 'refs/heads/development'
+  building-the-continuous-integration:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -26,39 +24,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build application
-        run: npm run build
-
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=my-portfolio
-
-  production-deployment:
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Run unit tests
+        run: npm test
 
       - name: Build application
         run: npm run build
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+      - name: Upload dist directory to artifact
+        uses: actions/upload-artifact@v4
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=my-portfolio
+          name: portfolio-dist
+          path: dist
+
 
