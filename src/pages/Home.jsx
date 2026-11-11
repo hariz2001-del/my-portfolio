@@ -16,7 +16,7 @@ function Home() {
           </h1>
           <p className="hero-description">
             I shape and deliver AI-assisted web products, build Telegram agents
-            that work against real business systems, and deploy them on cloud
+            that work against real business systems, AI automation and deploy them on cloud
             infrastructure. My business and engineering background helps me ask
             better questions and test whether the technology works in real life.
           </p>
